@@ -1,0 +1,499 @@
+body {
+  background-color: #f1f0f6 !important;
+}
+
+@media only screen and (min-width: 601px) {
+  #navigation {
+    margin: 25px auto;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #navigation .tabbtn {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #navigation .activetab {
+    color: white;
+    background-color: #006bce;
+    cursor: default;
+  }
+  .vacancies {
+    margin: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vacancies h2 {
+    background: linear-gradient(90deg, rgb(0, 107, 206) 0%, rgb(19, 24, 80) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .vacancies .vacancy {
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-width: 500px;
+  }
+  .vacancies .vacancy img {
+    width: 60px;
+    height: 60px;
+  }
+  .vacancies .vacancy p.title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: #212529;
+    margin: auto 5px;
+  }
+  .vacancies .vacancy .footer {
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .vacancies .vacancy .footer p {
+    margin: 0;
+  }
+  .vacancies .vacancy .footer a:hover {
+    color: white;
+  }
+  #applied {
+    display: none;
+  }
+  #vacancydetails {
+    margin: 25px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-width: 500px;
+  }
+  #vacancydetails h2 {
+    background: linear-gradient(90deg, rgb(0, 107, 206) 0%, rgb(19, 24, 80) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #vacancydetails p.title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: #212529;
+  }
+  #vacancydetails .footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #87898f;
+  }
+  #vacancydetails .footer p {
+    font-size: 18px;
+    margin: 0;
+  }
+  #vacancydetails .footer a:hover {
+    color: white;
+  }
+  #vacancydetails #road {
+    margin: 30px 0;
+    width: 80%;
+    position: relative;
+  }
+  #vacancydetails #road .point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  #vacancydetails #road .point i {
+    font-size: 24px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f0f6;
+    color: #212529;
+  }
+  #vacancydetails #road .point p {
+    margin: 0;
+  }
+  #vacancydetails #road #line {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-100%);
+    height: 4px;
+    width: 100%;
+    background-color: #f1f0f6;
+  }
+  #vacancydetails #road .successpoint i {
+    background-color: #3f8f3e;
+    color: white;
+  }
+  #timeline {
+    margin: 25px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-width: 500px;
+  }
+  #timeline .eventtimes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #timeline .eventtimes p {
+    margin: 0;
+  }
+  #timeline .eventtimes p.date {
+    font-weight: 500;
+  }
+  #timeline .note {
+    margin-top: 15px;
+    width: 100%;
+  }
+  div#offer,
+  div#accepted {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    height: -moz-max-content;
+    height: max-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  div#offer h2,
+  div#accepted h2 {
+    font-size: 28px;
+    color: #212529;
+  }
+  div#offer .icon,
+  div#accepted .icon {
+    position: absolute;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #37abdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #303031;
+  }
+  div#offer .icon p,
+  div#offer .icon i,
+  div#accepted .icon p,
+  div#accepted .icon i {
+    color: #006bce;
+    margin: 0;
+    font-size: 38px;
+  }
+  div#offer .icon p,
+  div#accepted .icon p {
+    font-weight: 500;
+  }
+  div#offer .data-row,
+  div#accepted .data-row {
+    display: flex;
+    flex-direction: row;
+  }
+  div#offer .data-row p,
+  div#accepted .data-row p {
+    font-size: 18px;
+  }
+  div#offer .data-row p span,
+  div#accepted .data-row p span {
+    font-weight: 500;
+  }
+  div#offer .data-row:nth-child(2),
+  div#accepted .data-row:nth-child(2) {
+    margin-top: 30px;
+  }
+  div#offer .data-row:nth-child(3),
+  div#accepted .data-row:nth-child(3) {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div#offer .icon {
+    background-color: #37abdc;
+    border: 6px solid #303031;
+  }
+  div#offer .icon p {
+    color: #006bce;
+  }
+  div#accepted .icon {
+    background-color: #d9f8eb;
+    border: 6px solid #303031;
+  }
+  div#accepted .icon i {
+    color: #3f8f3e;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #navigation {
+    margin: 15px auto;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #navigation .tabbtn {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #navigation .activetab {
+    color: white;
+    background-color: #006bce;
+    cursor: default;
+  }
+  .vacancies {
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vacancies h2 {
+    background: linear-gradient(90deg, rgb(0, 107, 206) 0%, rgb(19, 24, 80) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .vacancies .vacancy {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .vacancies .vacancy img {
+    width: 60px;
+    height: 60px;
+  }
+  .vacancies .vacancy p.title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #212529;
+    margin: 0 5px;
+    text-wrap: wrap;
+  }
+  .vacancies .vacancy .footer {
+    align-items: center;
+    flex-direction: column;
+  }
+  .vacancies .vacancy .footer p {
+    margin: 6px 0;
+  }
+  .vacancies .vacancy .footer a:hover {
+    color: white;
+  }
+  #applied {
+    display: none;
+  }
+  #vacancydetails {
+    margin: 15px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  #vacancydetails h2 {
+    background: linear-gradient(90deg, rgb(0, 107, 206) 0%, rgb(19, 24, 80) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #vacancydetails p.title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: #212529;
+  }
+  #vacancydetails .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #87898f;
+  }
+  #vacancydetails .footer p {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+  }
+  #vacancydetails .footer a:hover {
+    color: white;
+  }
+  #vacancydetails #road {
+    margin: 30px 0;
+    width: 100%;
+    position: relative;
+  }
+  #vacancydetails #road .point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  #vacancydetails #road .point i {
+    font-size: 24px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f0f6;
+    color: #212529;
+  }
+  #vacancydetails #road .point p {
+    margin: 0;
+  }
+  #vacancydetails #road #line {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-100%);
+    height: 4px;
+    width: 100%;
+    background-color: #f1f0f6;
+  }
+  #vacancydetails #road .successpoint i {
+    background-color: #3f8f3e;
+    color: white;
+  }
+  #timeline {
+    margin: 15px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  #timeline .eventtimes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #timeline .eventtimes p {
+    margin: 0;
+  }
+  #timeline .eventtimes p.date {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  #timeline .note {
+    margin-top: 15px;
+    width: 100%;
+  }
+  div#offer,
+  div#accepted {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    height: -moz-max-content;
+    height: max-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  div#offer h2,
+  div#accepted h2 {
+    font-size: 28px;
+    color: #212529;
+  }
+  div#offer .icon,
+  div#accepted .icon {
+    position: absolute;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #37abdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #303031;
+  }
+  div#offer .icon p,
+  div#offer .icon i,
+  div#accepted .icon p,
+  div#accepted .icon i {
+    color: #006bce;
+    margin: 0;
+    font-size: 38px;
+  }
+  div#offer .icon p,
+  div#accepted .icon p {
+    font-weight: 500;
+  }
+  div#offer .data-row,
+  div#accepted .data-row {
+    display: flex;
+    flex-direction: row;
+  }
+  div#offer .data-row p,
+  div#accepted .data-row p {
+    font-size: 18px;
+  }
+  div#offer .data-row p span,
+  div#accepted .data-row p span {
+    font-weight: 500;
+  }
+  div#offer .data-row:nth-child(2),
+  div#accepted .data-row:nth-child(2) {
+    margin-top: 30px;
+  }
+  div#offer .data-row:nth-child(3),
+  div#accepted .data-row:nth-child(3) {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div#offer .icon {
+    background-color: #37abdc;
+    border: 6px solid #303031;
+  }
+  div#offer .icon p {
+    color: #006bce;
+  }
+  div#accepted .icon {
+    background-color: #d9f8eb;
+    border: 6px solid #303031;
+  }
+  div#accepted .icon i {
+    color: #3f8f3e;
+  }
+}/*# sourceMappingURL=Vacancies.css.map */

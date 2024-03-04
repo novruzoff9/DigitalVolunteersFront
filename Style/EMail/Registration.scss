@@ -1,0 +1,333 @@
+@media only screen and (min-width: 601px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    div {
+      width: 50%;
+      display: flex;
+      align-items: center;
+    }
+    .logos {
+      margin-top: 50px;
+      img {
+        width: 200px;
+      }
+    }
+    .welcome {
+      margin-top: 50px;
+      flex-direction: column;
+      h3 {
+        text-align: center;
+        color: #131850;
+      }
+      p {
+        font-size: 18px;
+        color: #222;
+        text-align: center;
+      }
+    }
+    .profile-datas {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .data {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #222;
+        width: 200px;
+        .data-title {
+          width: 100%;
+          background-color: #006bce;
+          color: #fff;
+          margin: 0;
+          padding: 4px 8px;
+        }
+        .data-content {
+          margin: 0;
+          padding: 4px 8px;
+        }
+      }
+    }
+    .websitelink {
+      margin-top: 30px;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        padding: 8px 20px;
+        background-color: #006bce;
+        color: white;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    .advantages {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .advantageslist {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+        .advantage {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          height: 240px;
+          i {
+            font-size: 60px;
+            color: #006bce;
+          }
+          .fa-clipboard {
+            position: relative;
+            i {
+              position: absolute;
+              font-size: 20px;
+              left: 13px;
+              top: 26px;
+            }
+          }
+          h5 {
+            margin-top: 14px;
+            height: 50px;
+          }
+        }
+      }
+    }
+    .socialmedia {
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+      p {
+        width: fit-content;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .links {
+        justify-content: space-evenly;
+        .linkedin:hover {
+          color: #0077b5;
+        }
+
+        .instagram:hover {
+          background: linear-gradient(
+            135deg,
+            #405de6 0%,
+            #5851db 31%,
+            #833ab4 55%,
+            #c13584 78%,
+            #e1306c 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .youtube:hover {
+          color: #ff0000;
+        }
+
+        .facebook:hover {
+          background: linear-gradient(
+            180deg,
+            rgba(23, 169, 253, 1) 0%,
+            rgba(1, 101, 225, 1) 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .telegram:hover {
+          color: #0088cc;
+        }
+
+        a {
+          text-decoration: none;
+          color: #444;
+
+          i {
+            font-size: 24px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .logos {
+      margin-top: 50px;
+      img {
+        width: 120px;
+      }
+    }
+    .welcome {
+      margin-top: 50px;
+      flex-direction: column;
+      h3 {
+        text-align: center;
+        color: #131850;
+      }
+      p {
+        font-size: 18px;
+        color: #222;
+        text-align: center;
+      }
+    }
+    .profile-datas {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .data {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #222;
+        width: 200px;
+        .data-title {
+          width: 100%;
+          background-color: #006bce;
+          color: #fff;
+          margin: 0;
+          padding: 4px 8px;
+        }
+        .data-content {
+          margin: 0;
+          padding: 4px 8px;
+        }
+      }
+    }
+    .websitelink {
+      margin-top: 30px;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        padding: 8px 20px;
+        background-color: #006bce;
+        color: white;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    .advantages {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .advantageslist {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+        .advantage {
+          width: 100%;
+          padding: 0 10px;
+          display: flex;
+          flex-direction: column;
+          height: 240px;
+          i {
+            font-size: 60px;
+            color: #006bce;
+          }
+          .fa-clipboard {
+            position: relative;
+            i {
+              position: absolute;
+              font-size: 20px;
+              left: 13px;
+              top: 26px;
+            }
+          }
+          h5 {
+            margin-top: 14px;
+            height: 50px;
+          }
+          p{
+            text-align: center;
+          }
+        }
+      }
+    }
+    .socialmedia {
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+      p {
+        width: fit-content;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .links {
+        justify-content: space-evenly;
+        .linkedin:hover {
+          color: #0077b5;
+        }
+
+        .instagram:hover {
+          background: linear-gradient(
+            135deg,
+            #405de6 0%,
+            #5851db 31%,
+            #833ab4 55%,
+            #c13584 78%,
+            #e1306c 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .youtube:hover {
+          color: #ff0000;
+        }
+
+        .facebook:hover {
+          background: linear-gradient(
+            180deg,
+            rgba(23, 169, 253, 1) 0%,
+            rgba(1, 101, 225, 1) 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .telegram:hover {
+          color: #0088cc;
+        }
+
+        a {
+          text-decoration: none;
+          color: #444;
+
+          i {
+            font-size: 24px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}

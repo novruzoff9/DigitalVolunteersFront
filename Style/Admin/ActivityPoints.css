@@ -1,0 +1,526 @@
+.dark-mode input {
+  background-color: #141824;
+  border: 1px solid #323745;
+  color: white;
+  accent-color: white;
+}
+.dark-mode input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.dark-mode #list .user .main-datas .user-name {
+  color: #f7f8f7 !important;
+}
+.dark-mode #list .user p {
+  color: #f7f8f7;
+}
+.dark-mode #list .user .actions i {
+  color: #dedad6;
+  background-color: #0f111a;
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #87898f;
+  outline: none;
+}
+input:focus {
+  border: 2px solid #0162e8;
+}
+
+@media only screen and (min-width: 601px) {
+  #pointsstatistics {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #pointsstatistics section p {
+    margin: 0;
+    font-size: 20;
+  }
+  #pointsstatistics section p.value {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  #pointsstatistics #all {
+    background-color: #cfe8ff;
+  }
+  #pointsstatistics #all p {
+    color: #006bce;
+  }
+  #pointsstatistics #incresases {
+    background-color: #d9f8eb;
+  }
+  #pointsstatistics #incresases p {
+    color: #3f8f3e;
+  }
+  #pointsstatistics #decrases {
+    background-color: #fbdbe1;
+  }
+  #pointsstatistics #decrases p {
+    color: #ff331f;
+  }
+  #lists {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #lists .userlist {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+  }
+  #lists .userlist .users {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-self: flex-start;
+    width: 100%;
+  }
+  #lists .userlist .users .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #lists .userlist .users .user .picname {
+    display: flex;
+    flex-direction: row;
+  }
+  #lists .userlist .users .user:not(:first-child) {
+    margin-top: 5px;
+  }
+  #lists .userlist .users .user:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #lists .userlist .users .user .main-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #lists .userlist .users .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #lists .userlist .users .user .main-datas .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-self: flex-start;
+    width: auto;
+  }
+  #lists .userlist .users .user .main-datas .details p {
+    margin: 0;
+    font-size: 16px;
+  }
+  #lists .userlist .users .user .main-datas .details .username {
+    color: #080708;
+    font-weight: 600;
+  }
+  #lists .userlist .users .user .main-datas .details .department {
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  #lists .userlist .users .user .main-datas p.point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+  }
+  #lists .userlist .primary {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #lists .userlist a:hover {
+    color: #fff;
+  }
+  #lists #lastactivities p.point {
+    background-color: #cfe8ff;
+    color: #0162e8;
+  }
+  #lists #hardworkers p.point {
+    background-color: #d9f8eb;
+    color: #3f8f3e;
+  }
+  #lists #notworkers p.point {
+    background-color: #fbdbe1;
+    color: #ff331f;
+  }
+  #activitieslist {
+    width: 100%;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #activitieslist .user {
+    min-width: 350px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 20px;
+  }
+  #activitieslist .user .main-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #87898f;
+    padding-bottom: 10px;
+  }
+  #activitieslist .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #activitieslist .user .main-datas .user-name {
+    color: #080708;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  #activitieslist .user .main-datas p.activitypoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+  }
+  #activitieslist .user .main-datas p.increment {
+    background-color: #d9f8eb;
+    color: #3f8f3e;
+  }
+  #activitieslist .user .main-datas p.decrement {
+    background-color: #fbdbe1;
+    color: #ff331f;
+  }
+  #activitieslist .user .point-datas {
+    padding-top: 10px;
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  #activitieslist .user .point-datas p.sub-title {
+    width: 100%;
+    align-self: flex-start;
+    margin: 0;
+    font-size: 16px;
+    color: #87898f;
+  }
+  #activitieslist .user .point-datas .writer-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    align-self: flex-end;
+  }
+  #activitieslist .user .point-datas .writer-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #activitieslist .user .point-datas .writer-datas p.writer {
+    color: #080708;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  #activitieslist .user .point-datas .writer-datas p.date {
+    width: 100%;
+    position: absolute;
+    text-align: end;
+    bottom: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #87898f;
+  }
+  #activitieslist .user p.activatepoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+    background-color: #cfe8ff;
+    color: #0162e8;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #pointsstatistics {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #pointsstatistics section {
+    margin: 10px 0;
+  }
+  #pointsstatistics section p {
+    margin: 0;
+    font-size: 20;
+  }
+  #pointsstatistics section p.value {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  #pointsstatistics #all {
+    background-color: #cfe8ff;
+  }
+  #pointsstatistics #all p {
+    color: #006bce;
+  }
+  #pointsstatistics #incresases {
+    background-color: #d9f8eb;
+  }
+  #pointsstatistics #incresases p {
+    color: #3f8f3e;
+  }
+  #pointsstatistics #decrases {
+    background-color: #fbdbe1;
+  }
+  #pointsstatistics #decrases p {
+    color: #ff331f;
+  }
+  #lists {
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow: scroll;
+  }
+  #lists .userlist {
+    margin: 15px 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+  }
+  #lists .userlist .users {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-self: flex-start;
+    width: 100%;
+  }
+  #lists .userlist .users .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #lists .userlist .users .user .picname {
+    display: flex;
+    flex-direction: row;
+  }
+  #lists .userlist .users .user:not(:first-child) {
+    margin-top: 5px;
+  }
+  #lists .userlist .users .user:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #lists .userlist .users .user .main-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #lists .userlist .users .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #lists .userlist .users .user .main-datas .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-self: flex-start;
+    width: auto;
+  }
+  #lists .userlist .users .user .main-datas .details p {
+    margin: 0;
+    font-size: 16px;
+  }
+  #lists .userlist .users .user .main-datas .details .username {
+    color: #080708;
+    font-weight: 600;
+  }
+  #lists .userlist .users .user .main-datas .details .department {
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  #lists .userlist .users .user .main-datas p.point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+    margin-left: 10px;
+  }
+  #lists .userlist .primary {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #lists .userlist a:hover {
+    color: #fff;
+  }
+  #lists #lastactivities p.point {
+    background-color: #cfe8ff;
+    color: #0162e8;
+  }
+  #lists #hardworkers p.point {
+    background-color: #d9f8eb;
+    color: #3f8f3e;
+  }
+  #lists #notworkers p.point {
+    background-color: #fbdbe1;
+    color: #ff331f;
+  }
+  #activitieslist {
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #activitieslist .user {
+    min-width: 350px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 10px 0;
+  }
+  #activitieslist .user .main-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #87898f;
+    padding-bottom: 10px;
+  }
+  #activitieslist .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #activitieslist .user .main-datas .user-name {
+    color: #080708;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  #activitieslist .user .main-datas p.activitypoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+  }
+  #activitieslist .user .main-datas p.increment {
+    background-color: #d9f8eb;
+    color: #3f8f3e;
+  }
+  #activitieslist .user .main-datas p.decrement {
+    background-color: #fbdbe1;
+    color: #ff331f;
+  }
+  #activitieslist .user .point-datas {
+    padding-top: 10px;
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+  }
+  #activitieslist .user .point-datas p.sub-title {
+    width: 100%;
+    align-self: flex-start;
+    margin: 0;
+    font-size: 16px;
+    color: #87898f;
+  }
+  #activitieslist .user .point-datas .writer-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    align-self: flex-end;
+  }
+  #activitieslist .user .point-datas .writer-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #activitieslist .user .point-datas .writer-datas p.writer {
+    color: #080708;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  #activitieslist .user .point-datas .writer-datas p.date {
+    width: 100%;
+    position: absolute;
+    text-align: end;
+    bottom: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #87898f;
+  }
+  #activitieslist .user p.activatepoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+    background-color: #cfe8ff;
+    color: #0162e8;
+  }
+}/*# sourceMappingURL=ActivityPoints.css.map */

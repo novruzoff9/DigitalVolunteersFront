@@ -1,0 +1,174 @@
+$darkblue: #0162e8;
+$blue: #006bce;
+$darkgray: #1e2329;
+$gray: #87898f;
+$lightgray: #f1f0f6;
+$lightblue: #37abdc;
+
+$box-sahdow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+@media only screen and (min-width: 601px) {
+  .content {
+    margin: 25px;
+    flex-direction: row;
+    #user-card {
+      height: 100%;
+      justify-content: center;
+      img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      .user-datas {
+        margin-left: 20px;
+        height: 100%;
+        justify-content: space-between;
+        width: 280px;
+        p {
+          margin: 0;
+        }
+        p.name {
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 24px;
+        }
+        p.faculty {
+          font-size: 16px;
+          color: #3e465b;
+        }
+        label {
+          align-self: flex-end;
+          cursor: pointer;
+        }
+        input {
+          display: none;
+        }
+        p#imageerror {
+          background-color: transparent;
+          border: none;
+          text-align: end;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        p.error {
+          color: #ff331f;
+        }
+        p.success {
+          color: #3f8f3e;
+        }
+      }
+    }
+    #new-password {
+      margin-left: 20px;
+      height: 100%;
+      h4,
+      p {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+
+  .pop-up {
+    display: none;
+    flex-direction: column;
+    input {
+      width: 240px;
+      margin: 2px 0;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    margin: 15px;
+    flex-direction: column;
+    #user-card {
+      height: 100%;
+      justify-content: center;
+      img {
+        width: 100px;
+        border-radius: 50%;
+      }
+      .user-datas {
+        margin-left: 20px;
+        height: 100%;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+        p {
+          margin: 0;
+        }
+        p.name {
+          font-weight: 500;
+          font-size: 24px;
+        }
+        p.faculty {
+          font-size: 16px;
+          color: #3e465b;
+        }
+        label {
+          align-self: flex-end;
+          cursor: pointer;
+        }
+        input {
+          display: none;
+        }
+        p#imageerror {
+          background-color: transparent;
+          border: none;
+          text-align: end;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    #new-password {
+      margin-top: 20px;
+      height: 100%;
+      h4,
+      p {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+
+  .pop-up {
+    display: none;
+    flex-direction: column;
+    input {
+      width: 240px;
+      margin: 2px 0;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+}
+
+p.error {
+  color: #ff331f !important;
+  border: none;
+  max-width: 240px;
+  text-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+p.success {
+  color: #3f8f3e;
+  background-color: transparent !important;
+  border: none !important;
+  max-width: 240px;
+  text-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

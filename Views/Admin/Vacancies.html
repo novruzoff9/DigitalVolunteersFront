@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəqəmsal Kabinet Vakansiyalar</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/Images/new Logo - white.png">
+    <link href="/Style/AdminPage.css" rel="stylesheet" />
+    <link href="/Style/FormUI.css" rel="stylesheet" />
+    <link href="/Style/Admin/Vacancies.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <i id="menubtn" class="fas fa-bars"></i>
+        <div class="header-center">
+            <a href="/Home.html">
+                <img src="/Images/new Logo - white.png" alt="">
+            </a>
+        </div>
+        <div class="header-right">
+            <i class="fas fa-sun themebtn"></i>
+            <i class="fas fa-bell notficationbtn"></i>
+            <img class="profilebtn" src="/Images/Staff/Ceferisadiq Ibrahimov.jfif" alt="">
+        </div>
+        <div class="profile-menu mini-menu">
+            <ul>
+                <li class="profile-details">
+                    <img src="/Images/Staff/Yagmur Novruzlu 2.jpg" alt="">
+                    <div class="name-role">
+                        <p class="name">Yağmur Novruzlu</p>
+                        <p class="department">Developer</p>
+                    </div>
+                </li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="/UserProfile.html"><i class="fas fa-user"></i>
+                        <p>Profilim</p>
+                    </a></li>
+                <li><a href="/ProfileQrCode.html"><i class="fas fa-qrcode"></i>
+                        <p>QR Kodum</p>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>
+                        <p>Parametrlər</p>
+                    </a></li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="/login.html"><i class="fas fa-sign-out-alt"></i>
+                        <p>Çıxış</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="notfication-menu mini-menu">
+            <p class="empty">Bildiriş yoxdur</p>
+        </div>
+    </header>
+
+
+    <aside>
+        <ul>
+            <li class="activepage">
+                <a href="/Views/Admin/AdminPanel.html">
+                    <i class="fas fa-home"></i>
+                    <p>Əsas səhifə</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/userlist.html">
+                    <i class="fas fa-user"></i>
+                    <p>İstifadəçilər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APStaff.html">
+                    <i class="fas fa-users"></i>
+                    <p>Heyət üzvləri</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APEvents.html">
+                    <i class="fas fa-calendar-day"></i>
+                    <p>Tədbirlər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APNews.html">
+                    <i class="fas fa-newspaper"></i>
+                    <p>Xəbərlər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/DailyLogins.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <p>Girişlər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/ActivityPoints.html">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Aktivlik</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/Vacancies.html">
+                    <i class="fas fa-clipboard-list"></i>
+                    <p>Vakansiyalar</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+        <div id="vacancies">
+            <a href="" class="vacancy" id="addvacancy">
+                <i class="fas fa-notes-medical"></i>
+                <p>Vakansiya artır</p>
+            </a>
+            <section class="vacancy">
+                <p class="title">IT departamenti üzrə UX/UI developer</p>
+                <div class="footer d-flex justify-content-between">
+                    <p><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;1 Mart</p>
+                    <a href="/Views/Client/Vacancy.html" class="action-button success">Düzəliş</a>
+                </div>
+            </section>
+            <section class="vacancy">
+                <p class="title">Media Club üçün Qrafik dizayner</p>
+                <div class="footer d-flex justify-content-between">
+                    <p><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;5 Mart</p>
+                    <a href="/Views/Client/Vacancy.html" class="action-button success">Düzəliş</a>
+                </div>
+            </section>
+            <section class="vacancy">
+                <p class="title">Dizayn fakültəsi üzrə SMM</p>
+                <div class="footer d-flex justify-content-between">
+                    <p><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;20 fevral</p>
+                    <a href="/Views/Client/Vacancy.html" class="action-button success">Düzəliş</a>
+                </div>
+            </section>
+            <section class="vacancy">
+                <p class="title">Fakültə üzrə idarə heyəti</p>
+                <div class="footer d-flex justify-content-between">
+                    <p>Rəqəmsal İqitsadiyyat</p>
+                    <a href="/Views/Client/Vacancy.html" class="action-button success">Düzəliş</a>
+                </div>
+            </section>
+            <section class="vacancy">
+                <p class="title">Departament üzrə idarə heyəti</p>
+                <div class="footer d-flex justify-content-between">
+                    <p>Bütün departamentlər</p>
+                    <a href="/Views/Client/Vacancy.html" class="action-button success">Düzəliş</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript/profiles.json"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/JavaScript/Theme.js"></script>
+    <script>
+        $(".tabbtn").click(function () {
+            if ($(this).hasClass("activetab")) { return; }
+            else {
+                $(".tabbtn").removeClass("activetab");
+                $(this).addClass("activetab");
+                let value = $(this).attr("data-tab");
+                if (value == "all") {
+                    $("#applied").css("display", "none");
+                    $("#all").css("display", "flex");
+                }
+                else if (value == "applied") {
+                    $("#all").css("display", "none");
+                    $("#applied").css("display", "flex");
+                }
+            }
+        });
+    </script>
+    <script>
+        var user = JSON.parse(localStorage.getItem("user"));
+
+        $(".header-right img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details .name").text(user.name);
+        $(".profile-menu .profile-details .department").text(user.department);
+        $("#loginname").text(user.onlyname);
+
+        $(document).ready(function () {
+            if ($("aside").hasClass("small-menu") == false) {
+                var mainWidth = $("main").width();
+                mainWidth -= 250;
+                if (screen.width > 600) {
+                    $("main").width(mainWidth);
+                    $("main").css("margin-left", "250px");
+                    $("aside").height($(document).height());
+                }
+            }
+        });
+
+        $("#menubtn").click(function () {
+            $("aside").toggleClass("small-menu");
+            if (screen.width > 600) {
+                if ($("aside").hasClass("small-menu")) {
+                    var width = $("main").width();
+                    width += 170;
+                    $("main").width(width);
+                    $("main").css("margin-left", "80px");
+                    $("aside ul").width("50px");
+                }
+                else {
+                    $("main").css("margin-left", "250px");
+                    var width = $("main").width();
+                    width -= 170;
+                    $("main").width(width);
+                    $("aside ul").width("220px");
+                }
+            }
+            else {
+                if ($("aside").hasClass("small-menu")) {
+                    $("aside").height($(document).height());
+                }
+                else {
+                    $("aside").height(0);
+                }
+            }
+        });
+
+        $(".profilebtn").click(function () {
+            $(".profile-menu").toggle();
+        });
+
+        var height = $(document).height();
+        $(".pop-up").height(height);
+    </script>
+
+</body>
+
+</html>

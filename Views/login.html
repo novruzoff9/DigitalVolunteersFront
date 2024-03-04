@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3Y25VW1RJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M3Y25VW1RJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəqəmsal Kabinet</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="Images/Logo.jpg">
+    <link href="/Style/style.css" rel="stylesheet" />
+    <link href="/Style/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section id="left-side">
+            <p>AZƏRBAYCAN DÖVLƏT İQTİSAD UNİVERSİTETİ <br>RƏQƏMSAL KÖNÜLLÜLƏRİ</p>
+            <video src="/Videos/Digi login.mp4" autoplay loop></video>
+        </section>
+        <section id="right-side">
+            <div class="logos">
+                <a href="/Home.html">
+                    <img src="/Images/new Logo.png" alt="">
+                </a>
+                <img src="/Images/unec logo png.png" alt="">
+            </div>
+            <p>Xoş gəlmişsiniz!</p>
+            <p>Tələbənin Rəqəmsal Kabineti</p>
+            <form>
+                <div class="col-3">
+                    <input id="username" class="effect-1" type="text" placeholder="İstifadəçi adı" required>
+                    <span class="focus-border"></span>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="col-3">
+                    <input id="password" class="effect-1" type="password" placeholder="Şifrə" required>
+                    <span class="focus-border"></span>
+                    <i class="fas fa-key"></i>
+                </div>
+                <p id="error"></p>
+                <a id="forgotpass" href="/Views/ForgotPassword.html">Şifrəni unutmusunuz?</a>
+                <div id="buttons">
+                    <button id="login">Daxil ol</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/JavaScript/profiles.json"></script>
+    <script type="text/javascript" src="/JavaScript/login.js"></script>
+
+    <script>
+        var height = $(window).height();
+        console.log(height);
+        $("section").css("height", height);
+    </script>
+
+</body>
+
+</html>

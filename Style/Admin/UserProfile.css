@@ -1,0 +1,707 @@
+.dark-mode #profile p {
+  color: #006bce;
+}
+.dark-mode #profile p span {
+  color: #f7f8f7;
+}
+.dark-mode #profile p#name,
+.dark-mode #profile p#role {
+  color: #37abdc;
+}
+.dark-mode #about .staff .users .user .main-datas .details .username {
+  color: #f7f8f7;
+}
+.dark-mode #about .staff .users .user .actions i {
+  color: #dedad6;
+  background-color: #0f111a;
+}
+
+@media only screen and (min-width: 601px) {
+  #profile {
+    width: calc(30% - 50px);
+    min-width: 250px;
+    transition: 0.4s;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    align-self: flex-start;
+  }
+  #profile img {
+    width: 60%;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  #profile p {
+    color: #006bce;
+    text-align: center;
+    font-weight: 500;
+  }
+  #profile p span {
+    font-weight: 400;
+    color: black;
+  }
+  #profile p#name,
+  #profile p#role {
+    color: #131850;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #profile button {
+    margin-top: 20px;
+  }
+  #profile:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  #about {
+    width: calc(70% - 50px);
+    margin: 25px;
+    align-self: flex-start;
+  }
+  #about .header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+  #about .header .tabbtn {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #87898f;
+  }
+  #about .header .tabbtn:hover {
+    color: #006bce;
+  }
+  #about .header .activetab {
+    background-color: #131850;
+    color: white;
+  }
+  #about .header .activetab:hover {
+    color: white;
+  }
+  #about #activity {
+    display: flex;
+    flex-direction: column;
+  }
+  #about #activity .activitypoint {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #about #activity .activitypoint p {
+    margin: 0;
+  }
+  #about #activity .activitypoint p.date {
+    font-weight: 500;
+    width: 60px;
+  }
+  #about #activity .activitypoint p.text {
+    padding: 0 10px;
+    text-align: center;
+    width: calc(100% - 120px);
+  }
+  #about #activity .activitypoint p.point {
+    font-weight: 500;
+    color: #006bce;
+    font-size: 26px;
+    width: 40px;
+    text-align: end;
+  }
+  #about #activity .activitypoint:not(:last-child) {
+    border-bottom: 1px solid #aaa;
+  }
+  #about .staff {
+    display: none;
+  }
+  #about .staff .users {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-self: flex-start;
+    width: 100%;
+  }
+  #about .staff .users .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #about .staff .users .user:not(:first-child) {
+    margin-top: 5px;
+  }
+  #about .staff .users .user:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #about .staff .users .user .main-datas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #about .staff .users .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #about .staff .users .user .main-datas .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  #about .staff .users .user .main-datas .details p {
+    margin: 0;
+    font-size: 16px;
+  }
+  #about .staff .users .user .main-datas .details .username {
+    color: #080708;
+    font-weight: 500;
+  }
+  #about .staff .users .user .main-datas .details .department {
+    color: #aaa;
+  }
+  #about .staff .users .user .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #about .staff .users .user .actions i {
+    cursor: pointer;
+    color: #212529;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f1f0f6;
+  }
+  #about .staff .users .user .actions i:not(:first-child) {
+    margin-left: 5px;
+  }
+  #about .staff .users .user .actions i:not(:last-child) {
+    margin-right: 5px;
+  }
+  #userdetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #userdetails img {
+    width: 380px;
+  }
+  #userdetails .close {
+    justify-content: space-between !important;
+    margin-left: 0 !important;
+  }
+  #userdetails .close i {
+    font-size: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  #userdetails .data-column {
+    display: flex;
+    flex-direction: column;
+    width: -moz-max-content;
+    width: max-content;
+    justify-content: space-evenly;
+  }
+  #userdetails .data-column .data-value p.data {
+    color: #666;
+    margin: 0;
+  }
+  #userdetails .data-column .data-value p.value {
+    font-weight: 500;
+  }
+  #userdetails .data-column:not(:first-child) {
+    margin-left: 20px;
+  }
+  #userdetails .data-column:not(:last-child) {
+    margin-right: 20px;
+  }
+  #activitypoint {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+  }
+  #activitypoint .data-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #activitypoint .data-row img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  #activitypoint .data-row .data-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #activitypoint .data-row .data-value p.data {
+    color: #666;
+    margin: 0;
+  }
+  #activitypoint .data-row .data-value p.value {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    color: #006bce;
+  }
+  #activitypoint .data-row p.name {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+  }
+  #activitypoint .data-row i {
+    cursor: pointer;
+    align-self: start;
+    font-size: 20px;
+  }
+  #activitypoint input[type=range] {
+    width: 100%;
+    accent-color: #006bce;
+    cursor: pointer;
+  }
+  #activitypoint .calculate {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  #activitypoint .data-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #activitypoint .data-column .data-value p.data {
+    color: #666;
+    margin: 0;
+  }
+  #activitypoint .data-column .data-value p.value {
+    font-weight: 500;
+    margin: 0;
+    font-size: 28px;
+    color: #006bce;
+  }
+  #activitypoint .data-column textarea {
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+    resize: none;
+  }
+  #activitypoint .data-column textarea:focus {
+    border: 1px solid #006bce;
+  }
+  #activitypoint .data-column textarea:invalid {
+    border: 1px solid #ff331f;
+  }
+  #activitypoint .data-column .data-row:not(:first-child) {
+    margin-top: 20px;
+  }
+  #activitypoint .properties {
+    width: 65% !important;
+  }
+  #activitypoint .properties label {
+    color: #ff331f;
+    display: none;
+  }
+  #activitypoint .result {
+    margin-left: 20px;
+    align-items: center;
+    border: 2px solid #006bce;
+    border-radius: 8px;
+    width: calc(35% - 20px) !important;
+  }
+  #activitypoint .result .data-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #birthday {
+    width: 60%;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #birthday img {
+    width: 300px;
+  }
+  #birthday .close {
+    position: absolute;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    cursor: pointer;
+  }
+  #birthday .data-column:not(:first-child) {
+    margin-left: 20px;
+  }
+  #birthday .data-column:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #profile {
+    width: calc(100% - 30px);
+    min-width: 250px;
+    transition: 0.4s;
+    margin: 15px;
+  }
+  #profile img {
+    width: 80%;
+    border-radius: 50%;
+  }
+  #profile p {
+    color: #006bce;
+    text-align: center;
+  }
+  #profile p span {
+    color: black;
+  }
+  #profile p#name {
+    color: #131850;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #profile:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  #about {
+    width: 100%;
+    margin: 15px;
+    align-self: flex-start;
+  }
+  #about .header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #about .header .tabbtn {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #87898f;
+    text-align: center;
+  }
+  #about .header .tabbtn:hover {
+    color: #006bce;
+  }
+  #about .header .activetab {
+    background-color: #131850;
+    color: white;
+  }
+  #about .header .activetab:hover {
+    color: white;
+  }
+  #about #activity {
+    display: flex;
+    flex-direction: column;
+  }
+  #about #activity .activitypoint {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #about #activity .activitypoint p {
+    margin: 0;
+  }
+  #about #activity .activitypoint p.date {
+    font-weight: 500;
+    width: 60px;
+  }
+  #about #activity .activitypoint p.text {
+    padding: 0 10px;
+    text-align: center;
+    width: calc(100% - 120px);
+  }
+  #about #activity .activitypoint p.point {
+    font-weight: 500;
+    color: #006bce;
+    font-size: 26px;
+    width: 40px;
+    text-align: end;
+  }
+  #about #activity .activitypoint:not(:last-child) {
+    border-bottom: 1px solid #aaa;
+  }
+  #about .staff {
+    display: none;
+  }
+  #about .staff .users {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-self: flex-start;
+    width: 100%;
+  }
+  #about .staff .users .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #about .staff .users .user:not(:first-child) {
+    margin-top: 5px;
+  }
+  #about .staff .users .user:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #about .staff .users .user .main-datas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #about .staff .users .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  #about .staff .users .user .main-datas .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  #about .staff .users .user .main-datas .details p {
+    margin: 0;
+    font-size: 16px;
+  }
+  #about .staff .users .user .main-datas .details .username {
+    color: #080708;
+    font-weight: 500;
+  }
+  #about .staff .users .user .main-datas .details .department {
+    color: #aaa;
+  }
+  #about .staff .users .user .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #about .staff .users .user .actions i {
+    cursor: pointer;
+    color: #212529;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f1f0f6;
+  }
+  #about .staff .users .user .actions i:not(:first-child) {
+    margin-left: 5px;
+    display: none;
+  }
+  #about .staff .users .user .actions i:not(:last-child) {
+    margin-right: 5px;
+  }
+  #userdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+  }
+  #userdetails img {
+    width: 100px;
+  }
+  #userdetails .close {
+    justify-content: space-between !important;
+    margin-left: 0 !important;
+  }
+  #userdetails .close i {
+    font-size: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  #userdetails .data-column {
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: -moz-max-content;
+    width: max-content;
+    justify-content: space-evenly;
+  }
+  #userdetails .data-column .data-value p.data {
+    color: #006bce;
+    margin: 0;
+    margin-top: 8px;
+    text-align: center;
+  }
+  #userdetails .data-column .data-value p.value {
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+  }
+  #userdetails .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #userdetails .close button {
+    display: none;
+  }
+  #activitypoint {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+  }
+  #activitypoint .data-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #activitypoint .data-row img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  #activitypoint .data-row .data-value p.data {
+    color: #666;
+    margin: 0;
+  }
+  #activitypoint .data-row .data-value p.value {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    color: #006bce;
+  }
+  #activitypoint .data-row p.name {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+  }
+  #activitypoint .data-row i {
+    cursor: pointer;
+    align-self: start;
+    font-size: 20px;
+  }
+  #activitypoint input[type=range] {
+    width: 100%;
+    accent-color: #006bce;
+    cursor: pointer;
+  }
+  #activitypoint .calculate {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  #activitypoint .data-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #activitypoint .data-column .data-value p.data {
+    color: #666;
+    margin: 0;
+  }
+  #activitypoint .data-column .data-value p.value {
+    font-weight: 500;
+    margin: 0;
+    font-size: 28px;
+    color: #006bce;
+  }
+  #activitypoint .data-column textarea {
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+    resize: none;
+  }
+  #activitypoint .data-column textarea:focus {
+    border: 1px solid #006bce;
+  }
+  #activitypoint .data-column textarea:invalid {
+    border: 1px solid #ff331f;
+  }
+  #activitypoint .data-column .data-row:not(:first-child) {
+    margin-top: 20px;
+  }
+  #activitypoint .properties {
+    width: 65% !important;
+  }
+  #activitypoint .properties label {
+    color: #ff331f;
+    display: none;
+  }
+  #activitypoint .result {
+    margin-left: 20px;
+    align-items: center;
+    border: 2px solid #006bce;
+    border-radius: 8px;
+    width: calc(35% - 20px) !important;
+  }
+  #activitypoint .result .data-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #birthday {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #birthday img {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+  #birthday .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #birthday .data-column:not(:first-child) {
+    margin-top: 20px;
+  }
+  #birthday .data-column:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=UserProfile.css.map */

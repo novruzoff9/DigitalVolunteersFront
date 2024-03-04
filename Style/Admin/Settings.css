@@ -1,0 +1,158 @@
+@media only screen and (min-width: 601px) {
+  .content {
+    margin: 25px;
+    flex-direction: row;
+  }
+  .content #user-card {
+    height: 100%;
+    justify-content: center;
+  }
+  .content #user-card img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  .content #user-card .user-datas {
+    margin-left: 20px;
+    height: 100%;
+    justify-content: space-between;
+    width: 280px;
+  }
+  .content #user-card .user-datas p {
+    margin: 0;
+  }
+  .content #user-card .user-datas p.name {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .content #user-card .user-datas p.faculty {
+    font-size: 16px;
+    color: #3e465b;
+  }
+  .content #user-card .user-datas label {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .content #user-card .user-datas input {
+    display: none;
+  }
+  .content #user-card .user-datas p#imageerror {
+    background-color: transparent;
+    border: none;
+    text-align: end;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .content #user-card .user-datas p.error {
+    color: #ff331f;
+  }
+  .content #user-card .user-datas p.success {
+    color: #3f8f3e;
+  }
+  .content #new-password {
+    margin-left: 20px;
+    height: 100%;
+  }
+  .content #new-password h4,
+  .content #new-password p {
+    margin-bottom: 0.3rem;
+  }
+  .pop-up {
+    display: none;
+    flex-direction: column;
+  }
+  .pop-up input {
+    width: 240px;
+    margin: 2px 0;
+  }
+  .pop-up input[type=file] {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    margin: 15px;
+    flex-direction: column;
+  }
+  .content #user-card {
+    height: 100%;
+    justify-content: center;
+  }
+  .content #user-card img {
+    width: 100px;
+    border-radius: 50%;
+  }
+  .content #user-card .user-datas {
+    margin-left: 20px;
+    height: 100%;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+  }
+  .content #user-card .user-datas p {
+    margin: 0;
+  }
+  .content #user-card .user-datas p.name {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .content #user-card .user-datas p.faculty {
+    font-size: 16px;
+    color: #3e465b;
+  }
+  .content #user-card .user-datas label {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .content #user-card .user-datas input {
+    display: none;
+  }
+  .content #user-card .user-datas p#imageerror {
+    background-color: transparent;
+    border: none;
+    text-align: end;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .content #new-password {
+    margin-top: 20px;
+    height: 100%;
+  }
+  .content #new-password h4,
+  .content #new-password p {
+    margin-bottom: 0.3rem;
+  }
+  .pop-up {
+    display: none;
+    flex-direction: column;
+  }
+  .pop-up input {
+    width: 240px;
+    margin: 2px 0;
+  }
+  .pop-up input[type=file] {
+    display: none;
+  }
+}
+p.error {
+  color: #ff331f !important;
+  border: none;
+  max-width: 240px;
+  text-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.success {
+  color: #3f8f3e;
+  background-color: transparent !important;
+  border: none !important;
+  max-width: 240px;
+  text-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=Settings.css.map */

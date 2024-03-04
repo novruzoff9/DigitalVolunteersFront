@@ -1,0 +1,301 @@
+@media only screen and (min-width: 601px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  main div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  main .logos {
+    margin-top: 50px;
+  }
+  main .logos img {
+    width: 200px;
+  }
+  main .welcome {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  main .welcome h3 {
+    text-align: center;
+    color: #131850;
+  }
+  main .welcome p {
+    font-size: 18px;
+    color: #222;
+    text-align: center;
+  }
+  main .profile-datas {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .profile-datas .data {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    width: 200px;
+  }
+  main .profile-datas .data .data-title {
+    width: 100%;
+    background-color: #006bce;
+    color: #fff;
+    margin: 0;
+    padding: 4px 8px;
+  }
+  main .profile-datas .data .data-content {
+    margin: 0;
+    padding: 4px 8px;
+  }
+  main .websitelink {
+    margin-top: 30px;
+    justify-content: center;
+  }
+  main .websitelink a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #006bce;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  main .advantages {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .advantages .advantageslist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  main .advantages .advantageslist .advantage {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+  }
+  main .advantages .advantageslist .advantage i {
+    font-size: 60px;
+    color: #006bce;
+  }
+  main .advantages .advantageslist .advantage .fa-clipboard {
+    position: relative;
+  }
+  main .advantages .advantageslist .advantage .fa-clipboard i {
+    position: absolute;
+    font-size: 20px;
+    left: 13px;
+    top: 26px;
+  }
+  main .advantages .advantageslist .advantage h5 {
+    margin-top: 14px;
+    height: 50px;
+  }
+  main .socialmedia {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .socialmedia p {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  main .socialmedia .links {
+    justify-content: space-evenly;
+  }
+  main .socialmedia .links .linkedin:hover {
+    color: #0077b5;
+  }
+  main .socialmedia .links .instagram:hover {
+    background: linear-gradient(135deg, #405de6 0%, #5851db 31%, #833ab4 55%, #c13584 78%, #e1306c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main .socialmedia .links .youtube:hover {
+    color: #ff0000;
+  }
+  main .socialmedia .links .facebook:hover {
+    background: linear-gradient(180deg, rgb(23, 169, 253) 0%, rgb(1, 101, 225) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main .socialmedia .links .telegram:hover {
+    color: #0088cc;
+  }
+  main .socialmedia .links a {
+    text-decoration: none;
+    color: #444;
+  }
+  main .socialmedia .links a i {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  main div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  main .logos {
+    margin-top: 50px;
+  }
+  main .logos img {
+    width: 120px;
+  }
+  main .welcome {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  main .welcome h3 {
+    text-align: center;
+    color: #131850;
+  }
+  main .welcome p {
+    font-size: 18px;
+    color: #222;
+    text-align: center;
+  }
+  main .profile-datas {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  main .profile-datas .data {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    width: 200px;
+  }
+  main .profile-datas .data .data-title {
+    width: 100%;
+    background-color: #006bce;
+    color: #fff;
+    margin: 0;
+    padding: 4px 8px;
+  }
+  main .profile-datas .data .data-content {
+    margin: 0;
+    padding: 4px 8px;
+  }
+  main .websitelink {
+    margin-top: 30px;
+    justify-content: center;
+  }
+  main .websitelink a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #006bce;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  main .advantages {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .advantages .advantageslist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  main .advantages .advantageslist .advantage {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+  }
+  main .advantages .advantageslist .advantage i {
+    font-size: 60px;
+    color: #006bce;
+  }
+  main .advantages .advantageslist .advantage .fa-clipboard {
+    position: relative;
+  }
+  main .advantages .advantageslist .advantage .fa-clipboard i {
+    position: absolute;
+    font-size: 20px;
+    left: 13px;
+    top: 26px;
+  }
+  main .advantages .advantageslist .advantage h5 {
+    margin-top: 14px;
+    height: 50px;
+  }
+  main .advantages .advantageslist .advantage p {
+    text-align: center;
+  }
+  main .socialmedia {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  main .socialmedia p {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  main .socialmedia .links {
+    justify-content: space-evenly;
+  }
+  main .socialmedia .links .linkedin:hover {
+    color: #0077b5;
+  }
+  main .socialmedia .links .instagram:hover {
+    background: linear-gradient(135deg, #405de6 0%, #5851db 31%, #833ab4 55%, #c13584 78%, #e1306c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main .socialmedia .links .youtube:hover {
+    color: #ff0000;
+  }
+  main .socialmedia .links .facebook:hover {
+    background: linear-gradient(180deg, rgb(23, 169, 253) 0%, rgb(1, 101, 225) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main .socialmedia .links .telegram:hover {
+    color: #0088cc;
+  }
+  main .socialmedia .links a {
+    text-decoration: none;
+    color: #444;
+  }
+  main .socialmedia .links a i {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+}/*# sourceMappingURL=Registration.css.map */

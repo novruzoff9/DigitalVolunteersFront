@@ -1,0 +1,188 @@
+$darkblue: #063086;
+$blue: #006bce;
+$lightblue: #37abdc;
+$gray: #bfbfbf;
+$white: #ffffff;
+a {
+  text-decoration: none !important;
+}
+body {
+  background-color: #1e2329 !important;
+}
+.shrink {
+  padding: 5px 50px;
+  position: fixed;
+  .header-left {
+    width: 15%;
+    img {
+      width: 70px;
+    }
+  }
+}
+body > header {
+  background-color: #1e2329 !important;
+  z-index: 1;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  * {
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+  }
+
+  .header-left {
+    width: 15%;
+    img {
+      width: 100px;
+    }
+  }
+  .header-mid {
+    width: 70%;
+    display: flex;
+    padding: 0 10%;
+    ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0 !important;
+      padding: 0 !important;
+      justify-content: space-between;
+      li {
+        font-size: 24px;
+        color: $gray;
+        font-weight: 500;
+        padding: 0 5px;
+        cursor: pointer;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+  .header-right {
+    width: 15%;
+    display: flex;
+    justify-content: end;
+    a {
+      padding: 8px 24px;
+      background-color: $blue;
+      color: white;
+      font-size: 24px;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+  }
+}
+section:not(#home) {
+  background-color: #fafafa !important;
+}
+@media only screen and (min-width: 601px) {
+  section#home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 15% 0 15%;
+    position: relative;
+    height: calc(100vh - 100px);
+    p.title {
+      width: 80%;
+      color: $white;
+      font-weight: 500;
+      font-size: 64px;
+    }
+    p.caption {
+      display: none;
+      width: 50%;
+      color: $gray;
+    }
+    #registration {
+      width: 200px;
+      outline: none;
+      border: none;
+      //color: #5e17eb;
+      color: #fff;
+      padding: 10px 20px;
+      background-color: #3f4045;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 0;
+        height: 47px;
+        border-radius: 8px;
+        background: rgb(0, 107, 206);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 107, 206, 1) 0%,
+          rgba(19, 24, 80, 1) 50%,
+          rgba(94, 23, 235, 1) 100%
+        );
+      }
+      &:hover::before {
+        width: 200px;
+        animation-name: registration-button;
+        animation-duration: 0.5s;
+      }
+      span {
+        color: #fff;
+        z-index: 3;
+      }
+    }
+    p.takeplace {
+      color: $gray;
+      font-size: 20px;
+    }
+    .countdown {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      align-self: center;
+      bottom: 40px;
+      .time {
+        color: white;
+        margin: 0 10px;
+        width: 100px;
+        p.number {
+          font-weight: 500;
+          font-size: 40px;
+          margin: 0;
+          text-align: center;
+        }
+        p.text {
+          font-weight: 500;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+    }
+    footer {
+      display: none;
+    }
+  }
+  section#details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 15% 0 15%;
+    position: relative;
+    height: calc(100vh);
+    background-color: #131850 !important;
+  }
+}
+
+@keyframes registration-button {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}

@@ -1,0 +1,278 @@
+$darkblue: #0162e8;
+$blue: #006bce;
+$darkgray: #1e2329;
+$gray: #87898f;
+$lightgray: #f1f0f6;
+
+$box-sahdow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+.dark-mode {
+  input {
+    background-color: #141824;
+    border: 1px solid #323745;
+    color: white;
+    accent-color: white;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  #list {
+    .user {
+      .main-datas {
+        .user-name {
+          color: #f7f8f7;
+        }
+      }
+      p {
+        color: #f7f8f7;
+      }
+      .actions {
+        i {
+          color: #dedad6;
+          background-color: #0f111a;
+        }
+      }
+    }
+  }
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #87898f;
+  outline: none;
+  &:focus {
+    border: 2px solid #0162e8;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .for-ranges {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    width: 100%;
+    justify-content: space-between;
+    section {
+      width: 30%;
+      p.value {
+        font-weight: 500;
+        font-size: 26px;
+        margin: 0;
+      }
+      p.range {
+        font-size: 20px;
+      }
+      p.date {
+        color: #87898f;
+        margin: 0;
+      }
+    }
+  }
+  #daily_logins {
+    margin: 25px;
+    width: 100%;
+    svg {
+      border-radius: 20px;
+      box-shadow: $box-sahdow;
+      transition: 0.4s;
+      &:hover {
+        box-shadow: $box-sahdow2;
+      }
+    }
+  }
+  .logins {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    width: 100%;
+    justify-content: space-between;
+    #filter {
+      margin: 25px 0;
+    }
+    #list {
+      width: 100%;
+      margin: 25px 0;
+      display: flex;
+      flex-direction: column;
+      .user {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 8px;
+        .main-datas {
+          width: 300px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .user-id {
+            font-weight: 500;
+            width: 30px;
+            user-select: none;
+          }
+          img {
+            margin-left: 10px;
+            width: 50px;
+            border-radius: 50%;
+          }
+          .user-name {
+            color: #080708;
+            font-weight: 500;
+            margin-left: 10px;
+          }
+        }
+        p.userlogin {
+          width: 100px;
+        }
+        p.user-faculty {
+          width: 200px;
+        }
+        p {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          font-size: 16px;
+          color: #080708;
+        }
+        .actions {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 40px;
+          justify-content: space-between;
+          i {
+            cursor: pointer;
+            color: $darkgray;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background-color: $lightgray;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .for-ranges {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 100%;
+    justify-content: space-between;
+    section {
+      width: 100%;
+      margin: 15px 0;
+      p.value {
+        font-weight: 500;
+        font-size: 26px;
+        margin: 0;
+      }
+      p.range {
+        font-size: 20px;
+      }
+      p.date {
+        color: #87898f;
+        margin: 0;
+      }
+    }
+  }
+  #daily_logins {
+    margin: 15px;
+    width: 100%;
+    svg {
+      border-radius: 20px;
+      box-shadow: $box-sahdow;
+      transition: 0.4s;
+      &:hover {
+        box-shadow: $box-sahdow2;
+      }
+    }
+  }
+  .logins {
+    margin: 15px;
+    width: 100%;
+    #filter {
+      margin: 15px 0;
+      width: 100%;
+    }
+    #list {
+      width: 100%;
+      margin: 15px 0;
+      display: flex;
+      flex-direction: column;
+      .user {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-radius: 8px;
+        .main-datas {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .user-id {
+            font-weight: 500;
+            width: 30px;
+            user-select: none;
+          }
+          img {
+            margin-left: 10px;
+            width: 50px;
+            border-radius: 50%;
+          }
+          .user-name {
+            color: #080708;
+            font-weight: 500;
+            margin-left: 10px;
+          }
+        }
+        p.userlogin,
+        p.user-faculty,
+        p.activatepoint {
+          display: none;
+        }
+        p {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          font-size: 16px;
+          color: #080708;
+        }
+        .actions {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          i {
+            cursor: pointer;
+            color: $darkgray;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background-color: $lightgray;
+          }
+          i:not(:first-child) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

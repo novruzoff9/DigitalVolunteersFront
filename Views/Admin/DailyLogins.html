@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3Y25VW1RJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M3Y25VW1RJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəqəmsal Kabinet</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/Images/new Logo - white.png">
+    <link href="/Style/AdminPage.css" rel="stylesheet" />
+    <link href="/Style/FormUI.css" rel="stylesheet" />
+    <link href="/Style/Admin/DailyLogins.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <i id="menubtn" class="fas fa-bars"></i>
+        <div class="header-center">
+            <a href="/Home.html">
+                <!--<img src="Images/volunteers.png" alt="">-->
+                <img src="/Images/new Logo - white.png" alt="">
+            </a>
+        </div>
+        <!--<i class="fas fa-sign-out-alt"></i>-->
+        <div class="header-right">
+            <i class="fas fa-sun themebtn"></i>
+            <i class="fas fa-bell notficationbtn"></i>
+            <img class="profilebtn" src="/Images/Staff/Ceferisadiq Ibrahimov.jfif" alt="">
+        </div>
+        <div class="profile-menu mini-menu">
+            <ul>
+                <li class="profile-details">
+                    <img src="/Images/Staff/Yagmur Novruzlu 2.jpg" alt="">
+                    <div class="name-role">
+                        <p class="name">Yağmur Novruzlu</p>
+                        <p class="department">Developer</p>
+                    </div>
+                </li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="/UserProfile.html"><i class="fas fa-user"></i>
+                        <p>Profilim</p>
+                    </a></li>
+                <li><a href="/ProfileQrCode.html"><i class="fas fa-qrcode"></i>
+                        <p>QR Kodum</p>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>
+                        <p>Parametrlər</p>
+                    </a></li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="/login.html"><i class="fas fa-sign-out-alt"></i>
+                        <p>Çıxış</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="notfication-menu mini-menu">
+            <div class="notfication">
+                <p class="title">Tədbirə qeydiyyat</p>
+                <p class="body">"Proqramlaşdırma seminarı" tədbirinə qeydiyyatınız uğurla tamamlandı.</p>
+            </div>
+        </div>
+    </header>
+
+
+    <aside>
+        <ul>
+            <li>
+                <a href="/Views/Admin/AdminPanel.html">
+                    <i class="fas fa-home"></i>
+                    <p>Əsas səhifə</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/userlist.html">
+                    <i class="fas fa-user"></i>
+                    <p>İstifadəçilər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APStaff.html">
+                    <i class="fas fa-users"></i>
+                    <p>Heyət üzvləri</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APEvents.html">
+                    <i class="fas fa-calendar-day"></i>
+                    <p>Tədbirlər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APNews.html">
+                    <i class="fas fa-newspaper"></i>
+                    <p>Xəbərlər</p>
+                </a>
+            </li>
+            <li class="activepage">
+                <a href="/Views/Admin/DailyLogins.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <p>Girişlər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/ActivityPoints.html">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Aktivlik</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <main>
+        <div class="for-ranges">
+            <section>
+                <p class="value">12</p>
+                <p class="range">Gündəlik giriş sayı</p>
+                <p class="date">22.12.2023</p>
+            </section>
+            <section>
+                <p class="value">42</p>
+                <p class="range">Həftəlik giriş sayı</p>
+                <p class="date">18.12.2023-dən</p>
+            </section>
+            <section>
+                <p class="value">124</p>
+                <p class="range">Aylıq giriş sayı</p>
+                <p class="date">Dekabr ayı</p>
+            </section>
+        </div>
+        <div id="daily_logins"></div>
+
+        <div class="logins">
+            <section id="filter">
+                <input id="dateoflogins" type="date" value="2023-12-23">
+            </section>
+            <section id="list">
+                <div class="user">
+                    <div class="main-datas">
+                        <p class="user-id">1</p>
+                        <img src="/Images/Staff/Yagmur_Novruzlu_2.jpg" alt="">
+                        <p class="user-name">Novruzlu Yağmur</p>
+                    </div>
+                    <p class="userlogin">novruzoff</p>
+                    <p class="user-faculty">Rəqəmsal iqtisadiyyat</p>
+                    <p class="activatepoint">20</p>
+                    <div class="actions">
+                        <i class="fas fa-info"></i>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <div class="main-datas">
+                        <p class="user-id">2</p>
+                        <img src="/Images/ProfilePic/faracli.jpeg" alt="">
+                        <p class="user-name">Fərəcli Yusif</p>
+                    </div>
+                    <p class="userlogin">faracli</p>
+                    <p class="user-faculty">Rəqəmsal iqtisadiyyat</p>
+                    <p class="activatepoint">12</p>
+                    <div class="actions">
+                        <i class="fas fa-info"></i>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <div class="main-datas">
+                        <p class="user-id">3</p>
+                        <img src="/Images/ProfilePic/defaultPP.jpg" alt="">
+                        <p class="user-name">UserName</p>
+                    </div>
+                    <p class="userlogin">userlogin</p>
+                    <p class="user-faculty">Faculty</p>
+                    <p class="activatepoint">99</p>
+                    <div class="actions">
+                        <i class="fas fa-info"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/JavaScript/profiles.json"></script>
+    <script src="/JavaScript/Theme.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+        var user = JSON.parse(localStorage.getItem("user"));
+
+        $(".header-right img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details .name").text(user.name);
+        $(".profile-menu .profile-details .department").text(user.department);
+        $("#loginname").text(user.onlyname);
+
+        $(document).ready(function () {
+            if ($("aside").hasClass("small-menu") == false) {
+                var mainWidth = $("main").width();
+                mainWidth -= 250;
+                if (screen.width > 600) {
+                    $("main").width(mainWidth);
+                    $("main").css("margin-left", "250px");
+                }
+            }
+
+            var userlistheight = $("#user-list").outerHeight();
+            $("#counts").innerHeight(userlistheight);
+
+
+            if (screen.width > 600) {
+                $("#digi-greeting").height($("#hardworkers").height());
+            }
+        });
+
+        $("#menubtn").click(function () {
+            $("aside").toggleClass("small-menu");
+            if (screen.width > 600) {
+                if ($("aside").hasClass("small-menu")) {
+                    var width = $("main").width();
+                    width += 170;
+                    $("main").width(width);
+                    $("main").css("margin-left", "80px");
+                    $("aside ul").width("50px");
+                    $(".half-width svg").width($(".half-width").width());
+                    $(".piechart svg").width($(".half-width").width());
+                }
+                else {
+                    $("main").css("margin-left", "250px");
+                    var width = $("main").width();
+                    width -= 170;
+                    $("main").width(width);
+                    $("aside ul").width("220px");
+
+                    $(".half-width svg").width($(".half-width").width());
+                    $(".piechart svg").width($(".half-width").width());
+                }
+            }
+            else {
+                if ($("aside").hasClass("small-menu")) {
+                    $("aside").height($(document).height());
+                }
+                else {
+                    $("aside").height(0);
+                }
+            }
+        });
+
+        $(".profilebtn").click(function () {
+            $(".notfication-menu").hide();
+            $(".profile-menu").toggle();
+        });
+
+        $(".notficationbtn").click(function () {
+            $(".profile-menu").hide();
+            $(".notfication-menu").toggle();
+        });
+
+        var height = $(document).height();
+        $(".pop-up").height(height);
+
+        $("#dateoflogins").change(function () {
+            var value = $(this).val();
+            alert(value);
+
+            alert(typeof (value));
+        });
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'Gün');
+            data.addColumn('number', 'Üzv');
+            data.addColumn('number', 'Heyət');
+
+            data.addRows([
+                [1, 2, 3],
+                [2, 5, 1],
+                [3, 2, 9],
+                [4, 3, 15],
+                [5, 4, 5],
+                [6, 8, 13],
+                [7, 7, 12],
+                [8, 12, 22],
+                [9, 16, 8],
+                [10, 12, 30],
+                [11, 5, 7],
+                [12, 6, 8],
+                [13, 4, 6],
+                [14, 4, 6]
+            ]);
+
+            var options = {
+                title: 'Üzvlərin və idarə heyətinin gündəlik girişi',
+                titleTextStyle: {
+                    fontSize: 22
+                },
+                chartArea: {
+                    top: 70,
+                    width: '90%',
+                    height: '70%'
+                },
+                backgroundColor: {
+                    fill: "#006bce"
+                },
+                height: 500,
+                legend: { position: 'bottom' },
+                hAxis: { title: 'Tarix', titleTextStyle: { color: '#333' } },
+                vAxis: { minValue: 0 }
+            };
+
+            var chart = new google.visualization.AreaChart(document.getElementById('daily_logins'));
+
+            if ($(".themebtn").hasClass("fa-sun")) {
+                options.hAxis = {
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#080708',
+                    }
+                }
+                options.vAxis = {
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#080708',
+                    }
+                }
+                options.legend.textStyle = {
+                    color: "#080708"
+                }
+                options.backgroundColor = "#fff";
+                options.titleTextStyle.color = "#080708";
+            }
+            else {
+                options.hAxis = {
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fff',
+                    }
+                }
+                options.vAxis = {
+                    textStyle: {
+                        fontSize: 16,
+                        color: '#fff',
+                    }
+                }
+                options.legend.textStyle = {
+                    color: "#fff"
+                }
+                options.backgroundColor = "#141824";
+                options.titleTextStyle.color = "#fff";
+            }
+
+            $(document).ready(function () {
+                chart.draw(data, options);
+            });
+
+            $(".themebtn").click(function () {
+                if ($(this).hasClass("fa-sun")) {
+                    options.hAxis = {
+                        textStyle: {
+                            color: '#080708',
+                        }
+                    }
+                    options.vAxis = {
+                        textStyle: {
+                            color: '#080708',
+                        }
+                    }
+                    options.legend.textStyle = {
+                        color: "#080708"
+                    }
+                    options.backgroundColor = "#fff";
+                    options.titleTextStyle.color = "#080708";
+                    chart.draw(data, options);
+                }
+                else {
+                    options.hAxis = {
+                        textStyle: {
+                            color: '#fff',
+                        }
+                    }
+                    options.vAxis = {
+                        textStyle: {
+                            color: '#fff',
+                        }
+                    }
+                    options.legend.textStyle = {
+                        color: "#fff"
+                    }
+                    options.backgroundColor = "#141824";
+                    options.titleTextStyle.color = "#fff";
+                    chart.draw(data, options);
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

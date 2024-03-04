@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3Y25VW1RJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M3Y25VW1RJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəqəmsal Kabinet</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="Images/new Logo - white.png">
+    <link href="/Style/AdminPage.css" rel="stylesheet" />
+    <link href="/Style/FormUI.css" rel="stylesheet" />
+    <link href="/Style/Admin/APUserList.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <i id="menubtn" class="fas fa-bars"></i>
+        <div class="header-center">
+            <a href="/Home.html">
+                <!--<img src="Images/volunteers.png" alt="">-->
+                <img src="/Images/new Logo - white.png" alt="">
+            </a>
+        </div>
+        <!--<i class="fas fa-sign-out-alt"></i>-->
+        <div class="header-right">
+            <i class="fas fa-sun themebtn"></i>
+            <i class="fas fa-bell notficationbtn"></i>
+            <img class="profilebtn" src="/Images/Staff/Ceferisadiq Ibrahimov.jfif" alt="">
+        </div>
+        <div class="profile-menu mini-menu">
+            <ul>
+                <li class="profile-details">
+                    <img src="/Images/Staff/Yagmur_Novruzlu_2.jpg" alt="">
+                    <div class="name-role">
+                        <p class="name">Yağmur Novruzlu</p>
+                        <p class="department">Developer</p>
+                    </div>
+                </li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="/UserProfile.html"><i class="fas fa-user"></i>
+                        <p>Profilim</p>
+                    </a></li>
+                <li><a href="/ProfileQrCode.html"><i class="fas fa-qrcode"></i>
+                        <p>QR Kodum</p>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>
+                        <p>Parametrlər</p>
+                    </a></li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="/login.html"><i class="fas fa-sign-out-alt"></i>
+                        <p>Çıxış</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="notfication-menu mini-menu">
+            <div class="notfication">
+                <p class="title">Tədbirə qeydiyyat</p>
+                <p class="body">"Proqramlaşdırma seminarı" tədbirinə qeydiyyatınız uğurla tamamlandı.</p>
+            </div>
+        </div>
+    </header>
+
+
+    <aside>
+        <ul>
+            <li>
+                <a href="/Views/Admin/AdminPanel.html">
+                    <i class="fas fa-home"></i>
+                    <p>Əsas səhifə</p>
+                </a>
+            </li>
+            <li class="activepage">
+                <a href="/Views/Admin/userlist.html">
+                    <i class="fas fa-user"></i>
+                    <p>İstifadəçilər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APStaff.html">
+                    <i class="fas fa-users"></i>
+                    <p>Heyət üzvləri</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APEvents.html">
+                    <i class="fas fa-calendar-day"></i>
+                    <p>Tədbirlər</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Views/Admin/APNews.html">
+                    <i class="fas fa-newspaper"></i>
+                    <p>Xəbərlər</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+        <div id="counts">
+            <section id="usercount">
+                <i class="fas fa-user"></i>
+                <div class="statistics">
+                    <div class="change">
+                        <p class="increase">+23%</p>
+                    </div>
+                    <div class="data-value">
+                        <p class="value">456</p>
+                        <p class="data">İstifadəçi</p>
+                    </div>
+                    <div class="last-month">
+                        <p>Keçən il: <span>348</span></p>
+                    </div>
+                </div>
+            </section>
+            <section id="admincount">
+                <i class="fas fa-pencil-ruler"></i>
+                <div class="statistics">
+                    <div class="change">
+                        <p class="increase">+20%</p>
+                    </div>
+                    <div class="data-value">
+                        <p class="value">112</p>
+                        <p class="data">SMM</p>
+                    </div>
+                    <div class="last-month">
+                        <p>Keçən il: <span>92</span></p>
+                    </div>
+                </div>
+            </section>
+            <section id="eventcount">
+                <i class="fas fa-people-carry"></i>
+                <div class="statistics">
+                    <div class="change">
+                        <p class="increase">+45%</p>
+                    </div>
+                    <div class="data-value">
+                        <p class="value">45</p>
+                        <p class="data">HR</p>
+                    </div>
+                    <div class="last-month">
+                        <p>Keçən il: <span>23</span></p>
+                    </div>
+                </div>
+            </section>
+            <section id="newscount">
+                <i class="fas fa-handshake"></i>
+                <div class="statistics">
+                    <div class="change">
+                        <p class="increase">+24%</p>
+                    </div>
+                    <div class="data-value">
+                        <p class="value">21</p>
+                        <p class="data">PR</p>
+                    </div>
+                    <div class="last-month">
+                        <p>Keçən il: <span>17</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="filter">
+            <div class="search-user">
+                <input type="text" placeholder="İstifadəçi axtar">
+            </div>
+            <div id="role" class="select">
+                <div class="selected-value">
+                    <p>Vəzifə</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="possible-select">
+                    <ul>
+                        <li class="search-role search-select">
+                            <input type="text">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="faculty" class="select">
+                <div class="selected-value">
+                    <p>Fakültə</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="possible-select">
+                    <ul>
+                        <li class="search-department search-select">
+                            <input type="text">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="list">
+            <div class="user">
+                <div class="main-datas">
+                    <p class="user-id">1</p>
+                    <img src="/Images/Staff/Yagmur_Novruzlu_2.jpg" alt="">
+                    <p class="user-name">Novruzlu Yağmur</p>
+                </div>
+                <p class="userlogin">novruzoff</p>
+                <p class="user-faculty">Rəqəmsal iqtisadiyyat</p>
+                <p class="activatepoint">20</p>
+                <div class="actions">
+                    <i class="fas fa-info"></i>
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-bullhorn sendinformation"></i>
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="main-datas">
+                    <p class="user-id">2</p>
+                    <img src="/Images/ProfilePic/faracli.jpeg" alt="">
+                    <p class="user-name">Fərəcli Yusif</p>
+                </div>
+                <p class="userlogin">faracli</p>
+                <p class="user-faculty">Rəqəmsal iqtisadiyyat</p>
+                <p class="activatepoint">12</p>
+                <div class="actions">
+                    <i class="fas fa-info"></i>
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-bullhorn sendinformation"></i>
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="main-datas">
+                    <p class="user-id">3</p>
+                    <img src="/Images/ProfilePic/defaultPP.jpg" alt="">
+                    <p class="user-name">UserName</p>
+                </div>
+                <p class="userlogin">userlogin</p>
+                <p class="user-faculty">Faculty</p>
+                <p class="activatepoint">99</p>
+                <div class="actions">
+                    <i class="fas fa-info"></i>
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-bullhorn sendinformation"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="buttons">
+            <a class="adduser" href="/AddUser.html"><i class="fas fa-user-plus"></i> İstifadəçi artır</a>
+        </section>
+
+        <div class="pop-up">
+            <section id="userdetails">
+                <div class="data-column">
+                    <img src="/Images/Staff/Yagmur_Novruzlu_2.jpg" alt="">
+                </div>
+                <div class="data-column">
+                    <div class="data-value">
+                        <p class="data">İstifadəçi</p>
+                        <p class="value">Yağmur Novruzlu</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">İstifadəçi adı</p>
+                        <p class="value">novruzoff</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">Fakültə</p>
+                        <p class="value">Rəqəmsal İqtisadiyyat</p>
+                    </div>
+                </div>
+
+                <div class="data-column">
+                    <div class="data-value">
+                        <p class="data">Departament</p>
+                        <p class="value">İT</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">Rolu</p>
+                        <p class="value">Rəhbər</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">Aktivlik balı</p>
+                        <p class="value">0</p>
+                    </div>
+                </div>
+
+                <div class="data-column">
+                    <div class="data-value">
+                        <p class="data">Telefon</p>
+                        <p class="value">070-310-80-88</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">E-mail</p>
+                        <p class="value">yagmrnov2@gmail.com</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">Doğum tarixi</p>
+                        <p class="value">23 sentyabr 2005</p>
+                    </div>
+                </div>
+
+                <div class="data-column close">
+                    <i class="fas fa-times"></i>
+                    <button class="action-button primary">Düzəliş et</button>
+                </div>
+            </section>
+        </div>
+
+        <div class="pop-up">
+            <section id="activitypoint">
+                <div class="data-row">
+                    <img src="/Images/Staff/Yagmur_Novruzlu_2.jpg" alt="">
+                    <p class="name">Yağmur Novruzlu</p>
+                    <div class="data-value">
+                        <p class="value active-point">57</p>
+                        <p class="data">Hazırki bal</p>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="calculate">
+                    <div class="data-column properties">
+                        <label for="addingpoint">*Aktivlik balı 0 ola bilməz!</label>
+                        <input id="addingpoint" type="range" min="-10" max="10">
+                        <label for="Activitytxt" class="activitytxtlbl">*Aktivlik balı üçün açıqlama
+                            yazılmalıdır!</label>
+                        <textarea placeholder="Aktivlik balı üçün açıqlama" name="" id="Activitytxt" cols="8"
+                            rows="8"></textarea>
+                    </div>
+                    <div class="data-column result">
+                        <div class="data-value">
+                            <p class="value adding-point">0</p>
+                            <p class="data">Artırılacaq bal</p>
+                        </div>
+
+                        <div class="data-value">
+                            <p class="value result-point">xx</p>
+                            <p class="data">Nəticə</p>
+                        </div>
+
+                        <button class="action-button primary">Artır</button>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+
+        <div class="pop-up">
+            <section id="inform-user">
+                <div class="content">
+                    <h3>İstifadəçiyə xəbərdarlıq göndər</h3>
+                    <div id="reciever-user">
+                        <img src="/Images/Staff/Yagmur_Novruzlu_2.jpg" alt="">
+                        <div class="name-username">
+                            <p class="username">novruzoff</p>
+                            <p class="name">Novruzlu Yagmur</p>
+                        </div>
+                    </div>
+                    <textarea required placeholder="Məlumat göndər" name="InformText" id="InformText" cols="30"
+                        rows="10"></textarea>
+                    <div class="buttons">
+                        <button id="cancelinformation" class="action-button danger-link">Ləğv et</button>
+                        <button id="sendinformation" class="action-button primary">Göndər</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/JavaScript/profiles.json"></script>
+    <script src="/JavaScript/Theme.js"></script>
+    <script>
+        var users = [];
+        let roles = ["Rəhbər", "Sədr", "Sədr müavini"];
+        let faculties = ["Rəqəmsal İqtisadiyyat", "Mühəndislik", "Dizayn", "İqtisadiyyat və İdarəetmə", "SABAH"];
+
+        fetch("/JavaScript/profiles.json")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                $.each(data, function (i, profile) {
+                    users.push(profile);
+                });
+            });
+
+        console.log(users);
+
+        var user = JSON.parse(localStorage.getItem("user"));
+
+        $(".header-right img").attr("src", user.profileimg);
+        //$(".profile-menu .profile-details img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details .name").text(user.name);
+        $(".profile-menu .profile-details .department").text(user.department);
+
+        $(document).ready(function () {
+            var width = $(document).width();
+            width -= $("aside").width();
+            width -= $("#profile").width();
+            width -= 101;
+            $("#content").width(width);
+
+            if ($("aside").hasClass("small-menu") == false) {
+                var mainWidth = $("main").width();
+                mainWidth -= 250;
+                if (screen.width > 600) {
+                    $("main").width(mainWidth);
+                    $("main").css("margin-left", "250px");
+                }
+
+            }
+
+            var userlistheight = $("#user-list").outerHeight();
+            $("#counts").innerHeight(userlistheight);
+
+            roles.forEach(role => {
+                $("#role ul").append(
+                    $("<li class='suggest-select'>").append(
+                        $("<p>").text(role)
+                    )
+                );
+            });
+
+            faculties.forEach(faculty => {
+                $("#faculty ul").append(
+                    $("<li class='suggest-select'>").append(
+                        $("<p>").text(faculty)
+                    )
+                );
+            });
+
+            $("#userdetails").parent().css("display", "none");
+            $(".result-point").text($(".active-point").text());
+            $("#activitypoint").parent().css("display", "none");
+            $("#inform-user").parent().css("display", "none");
+
+        });
+
+        $(".selected-value").click(function () {
+            $(this).find("i").toggleClass("fa-chevron-up", "fa-chevron-down");
+            $(this).siblings(".possible-select").toggle();
+            $(this).parent().siblings(".select").children(".possible-select").hide();
+            $(this).parent().siblings(".select").find("i").removeClass("fa-chevron-up");
+            $(this).parent().siblings(".select").find("i").addClass("fa-chevron-down");
+        });
+
+        $(".select li.suggest-select").click(function () {
+            var selection = $(this).children("p").text();
+            alert(selection);
+
+            var selectBox = $(this).parent().parent().siblings(".selected-value");
+            selectBox.children("p").text(selection);
+
+            $(this).parent().parent().toggle();
+        });
+
+        $("li.search-department>input").keyup(function () {
+            let value = $(this).val();
+            value = value.toLowerCase();
+            $("#department ul li.suggest-select").remove();
+
+            if (value != "") {
+                let searchdepartments = departments.filter(x => x.includes(value));
+                searchdepartments.forEach(department => {
+                    $("#department ul").append(
+                        $("<li class='suggest-select'>").append(
+                            $("<p>").text(department)
+                        )
+                    );
+                });
+            }
+            else {
+                departments.forEach(department => {
+                    $("#department ul").append(
+                        $("<li class='suggest-select'>").append(
+                            $("<p>").text(department)
+                        )
+                    );
+                });
+            }
+
+
+            $(".select li.suggest-select").click(function () {
+                var selection = $(this).children("p").text();
+
+                var selectBox = $(this).parent().parent().siblings(".selected-value");
+                selectBox.children("p").text(selection);
+
+                $(this).parent().parent().toggle();
+            });
+        });
+
+        $("#menubtn").click(function () {
+            $("aside").toggleClass("small-menu");
+            if (screen.width > 600) {
+                if ($("aside").hasClass("small-menu")) {
+                    var width = $("main").width();
+                    width += 170;
+                    $("main").width(width);
+                    $("main").css("margin-left", "80px");
+                    $("aside ul").width("50px");
+                }
+                else {
+                    $("main").css("margin-left", "250px");
+                    var width = $("main").width();
+                    width -= 170;
+                    $("main").width(width);
+                    $("aside ul").width("220px");
+                }
+            }
+            else {
+                if ($("aside").hasClass("small-menu")) {
+                    $("aside").height($(document).height());
+                }
+                else {
+                    $("aside").height(0);
+                }
+            }
+        });
+
+        $(".profilebtn").click(function () {
+            $(".notfication-menu").hide();
+            $(".profile-menu").toggle();
+        });
+
+        $(".notficationbtn").click(function () {
+            $(".profile-menu").hide();
+            $(".notfication-menu").toggle();
+        });
+
+        var height = $(document).height();
+        $(".pop-up").height(height);
+
+
+        if (screen.width > 600) {
+
+            $("#userdetails .data-column").height($(".data-column").parent().height());
+        }
+        $(".fa-info").click(function () {
+            $("#userdetails").parent().css("display", "flex");
+        });
+        $("#userdetails i").click(function () {
+            $("#userdetails").parent().css("display", "none");
+        });
+
+        $("#addingpoint").change(function () {
+            var point = $(this).val();
+            let activepoint = Number($(".active-point").text());
+            $(".adding-point").text(point);
+            var resultpoint = activepoint + Number(point);
+            $(".result-point").text(resultpoint);
+        });
+        $(".fa-plus").click(function () {
+            $("#activitypoint").parent().css("display", "flex");
+        });
+        $("#activitypoint i").click(function () {
+            $("#activitypoint").parent().css("display", "none");
+        });
+
+        $(".fa-bullhorn").click(function () {
+            $("#inform-user").parent().css("display", "flex");
+            $("body").css("overflow", "auto");
+        });
+        $("#cancelinformation").click(function () {
+            $("#inform-user").parent().css("display", "none");
+            $("body").css("overflow", "auto");
+        });
+
+    </script>
+
+</body>
+
+</html>

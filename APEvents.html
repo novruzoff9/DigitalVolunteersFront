@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3Y25VW1RJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M3Y25VW1RJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəqəmsal Kabinet</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="Images/Rkt logo white.png">
+    <link href="Style/AdminPage.css" rel="stylesheet" />
+    <link href="Style/FormUI.css" rel="stylesheet" />
+    <link href="Style/Admin/adminpanelevents.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <i id="menubtn" class="fas fa-bars"></i>
+        <div class="header-center">
+            <a href="Home.html">
+                <img src="Images/new Logo - white.png" alt="">
+            </a>
+        </div>
+        <!--<i class="fas fa-sign-out-alt"></i>-->
+        <div class="header-right">
+            <i class="fas fa-bell"></i>
+            <img class="profilebtn" src="Images/ProfilePic/NovruzoffPP.png" alt="">
+        </div>
+        <div class="profile-menu mini-menu">
+            <ul>
+                <li class="profile-details">
+                    <img src="Images/ProfilePic/NovruzoffPP.png" alt="">
+                    <div class="name-role">
+                        <p class="name">Yağmur Novruzlu</p>
+                        <p class="department">Developer</p>
+                    </div>
+                </li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="UserProfile.html"><i class="fas fa-user"></i>
+                        <p>Profilim</p>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>
+                        <p>Parametrlər</p>
+                    </a></li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i>
+                        <p>Çıxış</p>
+                    </a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <aside>
+        <ul>
+            <li>
+                <a href="AdminPanel.html">
+                    <i class="fas fa-home"></i>
+                    <p>Əsas səhifə</p>
+                </a>
+            </li>
+            <li>
+                <a href="userlist.html">
+                    <i class="fas fa-user"></i>
+                    <p>İstifadəçilər</p>
+                </a>
+            </li>
+            <li>
+                <a href="APStaff.html">
+                    <i class="fas fa-users"></i>
+                    <p>Heyət üzvləri</p>
+                </a>
+            </li>
+            <li class="activepage">
+                <a href="APEvents.html">
+                    <i class="fas fa-calendar-day"></i>
+                    <p>Tədbirlər</p>
+                </a>
+            </li>
+            <li>
+                <a href="APNews.html">
+                    <i class="fas fa-newspaper"></i>
+                    <p>Xəbərlər</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+        <div id="events">
+            <a href="AddEvent.html" id="addevent">
+                <i class="fas fa-calendar-plus"></i>
+                <p>Tədbir artır</p>
+            </a>
+            <div class="event">
+                <img src="Images/Events/Sosial Medianin heyatimizda rolu.webp" alt="">
+                <p class="title">Sosial Medianin heyatimizda rolu</p>
+                <div class="details">
+                    <p class="date">31 Oktyabr 2022</p>
+                    <p class="location">III saylı korpus</p>
+                </div>
+                <div class="actions">
+                    <a href="AddEvent.html" class="success-hover action-button"><i class="fas fa-edit"></i> Düzəlt</a>
+                    <button onclick="ShowEventDetails()" class="primary-hover action-button"><i class="fas fa-info"></i>
+                        Tam
+                        bax</button>
+                    <a href="EvenGallery.html" class="warning-hover action-button"><i class="fas fa-images"></i>
+                        Qalareya</a>
+                    <a href="APEventParticipiants.html" class="secondary-hover action-button"><i
+                            class="fas fa-users"></i> İştirakçılar</a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="Images/Events/Sosial Medianin heyatimizda rolu2.webp" alt="">
+                <p class="title">Sosial Medianin heyatimizda rolu</p>
+                <div class="details">
+                    <p class="date">21 Oktyabr 2022</p>
+                    <p class="location">III saylı korpus</p>
+                </div>
+                <div class="actions">
+                    <a href="AddEvent.html" class="success action-button"><i class="fas fa-edit"></i> Düzəlt</a>
+                    <button onclick="ShowEventDetails()" class="primary action-button"><i class="fas fa-info"></i> Tam
+                        bax</button>
+                    <a href="#" class="warning action-button"><i class="fas fa-images"></i> Qalareya</a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="Images/Events/Game Industry.jpg" alt="">
+                <p class="title">Azərbaycanda Game İndustry və onun inkişafı</p>
+                <div class="details">
+                    <p class="date">20 Dekabr 2022</p>
+                    <p class="location">III saylı korpus</p>
+                </div>
+                <div class="actions">
+                    <a href="AddEvent.html" class="success action-button"><i class="fas fa-edit"></i> Düzəlt</a>
+                    <button onclick="ShowEventDetails()" class="primary action-button"><i class="fas fa-info"></i> Tam
+                        bax</button>
+                    <a href="#" class="warning action-button"><i class="fas fa-images"></i> Qalareya</a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="Images/Events/1C de esas vesaitler.jfif" alt="">
+                <p class="title">1C də Əsas vəsaitlər</p>
+                <div class="details">
+                    <p class="date">26 Oktyabr 2022</p>
+                    <p class="location">Əsas korpus</p>
+                </div>
+                <div class="actions">
+                    <a href="AddEvent.html" class="success action-button"><i class="fas fa-edit"></i> Düzəlt</a>
+                    <button onclick="ShowEventDetails()" class="primary action-button"><i class="fas fa-info"></i> Tam
+                        bax</button>
+                    <a href="#" class="warning action-button"><i class="fas fa-images"></i> Qalareya</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up">
+            <section id="eventdetails">
+                <div class="data-column">
+                    <img src="Images/Events/3_GunneRahim.jpg" alt="">
+                </div>
+                <div class="data-column">
+                    <div class="data-value">
+                        <p class="data">Adı</p>
+                        <p class="value">Sosial Medianin heyatimizda rolu</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">Haqqında</p>
+                        <p class="value">"Rəqəmsal Könüllülər Təşkilatı" adından hər birinizi salamlayırıq.
+                            Təşkilatımız daha bir təlim ilə qarşınızdadır.
+                            ”Sosial medianın həyatımızda rolu və rəqəmsal məzmun istehsalçısı” adlı layihəmizə davam
+                            edirik.
+                            🗣️ Layihəmizin növbəti qonağı tanınmış sosial media blogger,video məzmun istehsalçısı,
+                            youtuber Günel Rəhimova
+                            tələbələrimizə sosial medianın həyatımızda necə rol oynadığı haqqında öz fikirlərini və
+                            təcrübələrini bölüşəcək.
+                            *Görüş yalnız UNEC tələbələri üçündür.</p>
+                    </div>
+                </div>
+
+                <div class="data-column">
+                    <div class="data-value">
+                        <p class="data">Tarix</p>
+                        <p class="value">31 oktyabr 2022 12:00</p>
+                    </div>
+
+                    <div class="data-value">
+                        <p class="data">Məkan</p>
+                        <p class="value">III saylı korpus</p>
+                    </div>
+                </div>
+
+                <div class="data-column close">
+                    <i class="fas fa-times"></i>
+                    <button class="action-button primary">Düzəliş et</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript/profiles.json"></script>
+
+    <script>
+        var user = JSON.parse(localStorage.getItem("user"));
+
+        $(".header-right img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details .name").text(user.name);
+        $(".profile-menu .profile-details .department").text(user.department);
+
+        $(document).ready(function () {
+            var width = $(document).width();
+            width -= $("aside").width();
+            width -= $("#profile").width();
+            width -= 101;
+            $("#content").width(width);
+
+            if ($("aside").hasClass("small-menu") == false) {
+                var mainWidth = $("main").width();
+                mainWidth -= 250;
+                if (screen.width > 600) {
+                    $("main").width(mainWidth);
+                    $("main").css("margin-left", "250px");
+                    $("aside").height($(document).height());
+                }
+            }
+
+            const addeventwidth = $("#addevent i").width();
+            $("#addevent i").height(addeventwidth);
+            $("#addevent i").css("font-size", addeventwidth);
+
+
+
+            $("#eventdetails").parent().css("display", "none");
+        });
+
+
+
+        $("#menubtn").click(function () {
+            $("aside").toggleClass("small-menu");
+            if (screen.width > 600) {
+                if ($("aside").hasClass("small-menu")) {
+                    var width = $("main").width();
+                    width += 170;
+                    $("main").width(width);
+                    $("main").css("margin-left", "80px");
+                    $("aside ul").width("50px");
+                }
+                else {
+                    $("main").css("margin-left", "250px");
+                    var width = $("main").width();
+                    width -= 170;
+                    $("main").width(width);
+                    $("aside ul").width("220px");
+                }
+            }
+            else {
+                if ($("aside").hasClass("small-menu")) {
+                    $("aside").height($(document).height());
+                }
+                else {
+                    $("aside").height(0);
+                }
+            }
+        });
+
+        $(".profilebtn").click(function () {
+            $(".profile-menu").toggle();
+        });
+
+        var height = $(document).height();
+        $(".pop-up").height(height);
+
+        $("#eventdetails .data-column").height($(".data-column").parent().height());
+        function ShowEventDetails() {
+            $("#eventdetails").parent().css("display", "flex");
+        };
+        $("#eventdetails i").click(function () {
+            $("#eventdetails").parent().css("display", "none");
+        });
+
+    </script>
+
+</body>
+
+</html>

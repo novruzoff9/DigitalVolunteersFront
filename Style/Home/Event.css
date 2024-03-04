@@ -1,0 +1,180 @@
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #1e2329 !important;
+}
+
+.shrink {
+  padding: 5px 50px;
+  position: fixed;
+}
+.shrink .header-left {
+  width: 15%;
+}
+.shrink .header-left img {
+  width: 70px;
+}
+
+body > header {
+  background-color: #1e2329 !important;
+  z-index: 1;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+body > header * {
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+}
+body > header .header-left {
+  width: 15%;
+}
+body > header .header-left img {
+  width: 100px;
+}
+body > header .header-mid {
+  width: 70%;
+  display: flex;
+  padding: 0 10%;
+}
+body > header .header-mid ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 !important;
+  padding: 0 !important;
+  justify-content: space-between;
+}
+body > header .header-mid ul li {
+  font-size: 24px;
+  color: #bfbfbf;
+  font-weight: 500;
+  padding: 0 5px;
+  cursor: pointer;
+}
+body > header .header-mid ul li:hover {
+  color: #006bce;
+}
+body > header .header-right {
+  width: 15%;
+  display: flex;
+  justify-content: end;
+}
+body > header .header-right a {
+  padding: 8px 24px;
+  background-color: #006bce;
+  color: white;
+  font-size: 24px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+section:not(#home) {
+  background-color: #fafafa !important;
+}
+
+@media only screen and (min-width: 601px) {
+  section#home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 15% 0 15%;
+    position: relative;
+    height: calc(100vh - 100px);
+  }
+  section#home p.title {
+    width: 80%;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 64px;
+  }
+  section#home p.caption {
+    display: none;
+    width: 50%;
+    color: #bfbfbf;
+  }
+  section#home #registration {
+    width: 200px;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #3f4045;
+    position: relative;
+  }
+  section#home #registration:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 0;
+    height: 47px;
+    border-radius: 8px;
+    background: rgb(0, 107, 206);
+    background: linear-gradient(90deg, rgb(0, 107, 206) 0%, rgb(19, 24, 80) 50%, rgb(94, 23, 235) 100%);
+  }
+  section#home #registration:hover::before {
+    width: 200px;
+    animation-name: registration-button;
+    animation-duration: 0.5s;
+  }
+  section#home #registration span {
+    color: #fff;
+    z-index: 3;
+  }
+  section#home p.takeplace {
+    color: #bfbfbf;
+    font-size: 20px;
+  }
+  section#home .countdown {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-self: center;
+    bottom: 40px;
+  }
+  section#home .countdown .time {
+    color: white;
+    margin: 0 10px;
+    width: 100px;
+  }
+  section#home .countdown .time p.number {
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+  }
+  section#home .countdown .time p.text {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+  }
+  section#home footer {
+    display: none;
+  }
+  section#details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 15% 0 15%;
+    position: relative;
+    height: 100vh;
+    background-color: #131850 !important;
+  }
+}
+@keyframes registration-button {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}/*# sourceMappingURL=Event.css.map */

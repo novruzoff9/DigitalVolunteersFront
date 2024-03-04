@@ -1,0 +1,93 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    p{
+        color: #2B376E;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0; 
+    }
+    form{
+        position: relative;
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
+        .col-3{
+            float: left; 
+            width: 100%; 
+            margin-top: 40px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input[type="text"], input[type="password"]{
+                padding-left: 40px;
+                outline: none;
+                font-size: 15px;
+                //font: 15px/24px "Lato", Arial, sans-serif; 
+                color: #333; 
+                width: 100%; 
+                box-sizing: border-box; 
+                letter-spacing: 1px;
+            }
+            .effect-1{
+                border: 0; 
+                padding: 7px 0; 
+                border-bottom: 1px solid #ccc;
+            }
+            .effect-1 ~ .focus-border{
+                position: absolute; 
+                bottom: 0; 
+                width: 0; 
+                height: 2px; 
+                background-color: #1286fa; 
+                transition: 0.4s;
+            }
+            .effect-1:focus ~ .focus-border{
+                width: 100%; 
+                transition: 0.4s;
+            }
+            i{
+                position: absolute; 
+                left: 10px;
+                bottom: 0; 
+                padding: 12px 0;
+                width: 0; 
+                color: #1286fa; 
+            }
+        } 
+        #error{
+            position: absolute;
+            bottom: 50px;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 15px;
+            margin: 0;
+            color: red;
+        }
+        #buttons{        
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            input[type="button"], button{    
+                font-size: 15px;
+                width: 50%;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                padding: 8px 0;
+                background-color: #1286fa;
+                color: white;
+                font-weight: 500;
+            }
+        }        
+    }
+}

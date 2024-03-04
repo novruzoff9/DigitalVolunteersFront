@@ -1,0 +1,105 @@
+$darkblue: #0162e8;
+$blue: #006bce;
+
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 8px;
+  padding: 5px 18px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.success {
+  background-color: #3f8f3e;
+  border: 1px solid #3f8f3e;
+}
+
+.success-hover {
+  background-color: #3f8f3e;
+  border: 1px solid #3f8f3e;
+  &:hover {
+    color: #3f8f3e !important;
+    background-color: transparent;
+  }
+}
+.warning {
+  background-color: #ff6400;
+  border: 1px solid #ff6400;
+}
+
+.warning-hover {
+  background-color: #ff6400;
+  border: 1px solid #ff6400;
+  &:hover {
+    color: #ff6400 !important;
+    background-color: transparent;
+  }
+}
+
+.primary {
+  background-color: $blue;
+  border: 1px solid $blue;
+}
+
+.primary-hover {
+  background-color: $blue;
+  border: 1px solid $blue;
+  &:hover {
+    color: $blue !important;
+    background-color: transparent;
+  }
+}
+
+.secondary {
+  background-color: #5e17eb;
+  border: 1px solid #5e17eb;
+}
+
+.secondary-hover {
+  background-color: #5e17eb;
+  border: 1px solid #5e17eb;
+  &:hover {
+    color: #5e17eb !important;
+    background-color: transparent;
+  }
+}
+
+.danger {
+  background-color: #ff331f;
+  border: 1px solid #ff331f;
+}
+
+.danger-hover {
+  background-color: #ff331f;
+  border: 1px solid #ff331f;
+  &:hover {
+    color: #ff331f !important;
+    background-color: transparent;
+  }
+}
+.danger-link {
+  background-color: transparent;
+  color: #ff331f;
+  &:hover {
+    color: #ff331f;
+    background-color: transparent;
+  }
+}
+
+.daisy {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #87898f;
+  outline: none;
+  &:focus {
+    border: 2px solid #0162e8;
+  }
+}

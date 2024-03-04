@@ -1,0 +1,260 @@
+.dark-mode input {
+  background-color: #141824;
+  border: 1px solid #323745;
+  color: white;
+  accent-color: white;
+}
+.dark-mode input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.dark-mode #list .user .main-datas .user-name {
+  color: #f7f8f7;
+}
+.dark-mode #list .user p {
+  color: #f7f8f7;
+}
+.dark-mode #list .user .actions i {
+  color: #dedad6;
+  background-color: #0f111a;
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #87898f;
+  outline: none;
+}
+input:focus {
+  border: 2px solid #0162e8;
+}
+
+@media only screen and (min-width: 601px) {
+  .for-ranges {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .for-ranges section {
+    width: 30%;
+  }
+  .for-ranges section p.value {
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0;
+  }
+  .for-ranges section p.range {
+    font-size: 20px;
+  }
+  .for-ranges section p.date {
+    color: #87898f;
+    margin: 0;
+  }
+  #daily_logins {
+    margin: 25px;
+    width: 100%;
+  }
+  #daily_logins svg {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s;
+  }
+  #daily_logins svg:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  .logins {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .logins #filter {
+    margin: 25px 0;
+  }
+  .logins #list {
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .logins #list .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .logins #list .user .main-datas {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logins #list .user .main-datas .user-id {
+    font-weight: 500;
+    width: 30px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .logins #list .user .main-datas img {
+    margin-left: 10px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .logins #list .user .main-datas .user-name {
+    color: #080708;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  .logins #list .user p.userlogin {
+    width: 100px;
+  }
+  .logins #list .user p.user-faculty {
+    width: 200px;
+  }
+  .logins #list .user p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 16px;
+    color: #080708;
+  }
+  .logins #list .user .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40px;
+    justify-content: space-between;
+  }
+  .logins #list .user .actions i {
+    cursor: pointer;
+    color: #1e2329;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f1f0f6;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .for-ranges {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .for-ranges section {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .for-ranges section p.value {
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0;
+  }
+  .for-ranges section p.range {
+    font-size: 20px;
+  }
+  .for-ranges section p.date {
+    color: #87898f;
+    margin: 0;
+  }
+  #daily_logins {
+    margin: 15px;
+    width: 100%;
+  }
+  #daily_logins svg {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s;
+  }
+  #daily_logins svg:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  .logins {
+    margin: 15px;
+    width: 100%;
+  }
+  .logins #filter {
+    margin: 15px 0;
+    width: 100%;
+  }
+  .logins #list {
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .logins #list .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+  .logins #list .user .main-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logins #list .user .main-datas .user-id {
+    font-weight: 500;
+    width: 30px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .logins #list .user .main-datas img {
+    margin-left: 10px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .logins #list .user .main-datas .user-name {
+    color: #080708;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  .logins #list .user p.userlogin,
+  .logins #list .user p.user-faculty,
+  .logins #list .user p.activatepoint {
+    display: none;
+  }
+  .logins #list .user p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 16px;
+    color: #080708;
+  }
+  .logins #list .user .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logins #list .user .actions i {
+    cursor: pointer;
+    color: #1e2329;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f1f0f6;
+  }
+  .logins #list .user .actions i:not(:first-child) {
+    display: none;
+  }
+}/*# sourceMappingURL=DailyLogins.css.map */

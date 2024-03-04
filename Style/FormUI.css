@@ -1,0 +1,104 @@
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 8px;
+  padding: 5px 18px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.success {
+  background-color: #3f8f3e;
+  border: 1px solid #3f8f3e;
+}
+
+.success-hover {
+  background-color: #3f8f3e;
+  border: 1px solid #3f8f3e;
+}
+.success-hover:hover {
+  color: #3f8f3e !important;
+  background-color: transparent;
+}
+
+.warning {
+  background-color: #ff6400;
+  border: 1px solid #ff6400;
+}
+
+.warning-hover {
+  background-color: #ff6400;
+  border: 1px solid #ff6400;
+}
+.warning-hover:hover {
+  color: #ff6400 !important;
+  background-color: transparent;
+}
+
+.primary {
+  background-color: #006bce;
+  border: 1px solid #006bce;
+}
+
+.primary-hover {
+  background-color: #006bce;
+  border: 1px solid #006bce;
+}
+.primary-hover:hover {
+  color: #006bce !important;
+  background-color: transparent;
+}
+
+.secondary {
+  background-color: #5e17eb;
+  border: 1px solid #5e17eb;
+}
+
+.secondary-hover {
+  background-color: #5e17eb;
+  border: 1px solid #5e17eb;
+}
+.secondary-hover:hover {
+  color: #5e17eb !important;
+  background-color: transparent;
+}
+
+.danger {
+  background-color: #ff331f;
+  border: 1px solid #ff331f;
+}
+
+.danger-hover {
+  background-color: #ff331f;
+  border: 1px solid #ff331f;
+}
+.danger-hover:hover {
+  color: #ff331f !important;
+  background-color: transparent;
+}
+
+.danger-link {
+  background-color: transparent;
+  color: #ff331f;
+}
+.danger-link:hover {
+  color: #ff331f;
+  background-color: transparent;
+}
+
+.daisy {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #87898f;
+  outline: none;
+}
+.daisy:focus {
+  border: 2px solid #0162e8;
+}/*# sourceMappingURL=FormUI.css.map */

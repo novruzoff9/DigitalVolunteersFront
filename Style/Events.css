@@ -1,0 +1,448 @@
+section#events article {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#events article .event {
+  width: calc(20% + 10px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+section#events article .event img {
+  width: 100%;
+  border-radius: 14px;
+}
+section#events article .event p.header {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+  align-self: flex-start;
+}
+section#events article .event p.caption {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  align-self: flex-start;
+  color: #8d8d8d;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: none;
+  text-overflow: ellipsis;
+}
+section#events article .event .date-time {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+section#events article .event .date-time div {
+  display: flex;
+  flex-direction: row;
+}
+section#events article .event .date-time div * {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #8d8d8d;
+}
+section#events article .event .date-time div i {
+  margin: 0 3px 0 0 !important;
+}
+section#events article .event .date-time div p {
+  margin: 0 0 0 3px !important;
+}
+section#events article .event a,
+section#events article .event button {
+  margin-top: 12px;
+  padding: 8px 24px;
+  background-color: #006bce;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #f1f0f6;
+}
+
+@media only screen and (min-width: 601px) {
+  section#events .event:nth-child(n+5) {
+    margin-top: 40px;
+  }
+}
+section#nextevent,
+section#lastevent {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding: 200px 80px;
+}
+section#nextevent .details,
+section#lastevent .details {
+  width: 70%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#nextevent .details p.name,
+section#lastevent .details p.name {
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+}
+section#nextevent .details p.date-view,
+section#lastevent .details p.date-view {
+  color: #d6d6d6;
+  font-size: 18px;
+}
+section#nextevent .details p.date-view i,
+section#lastevent .details p.date-view i {
+  margin-right: 6px;
+}
+section#nextevent .details p.nomination,
+section#lastevent .details p.nomination {
+  margin-top: 6px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+section#nextevent .details p.caption,
+section#lastevent .details p.caption {
+  width: 80%;
+  color: #d6d6d6;
+  font-size: 18px;
+}
+section#nextevent .details .sign,
+section#lastevent .details .sign {
+  color: #303030;
+  background-color: #f9d54b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 160px;
+  border-radius: 8px;
+}
+section#nextevent .right-side,
+section#lastevent .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+section#nextevent .right-side .img,
+section#lastevent .right-side .img {
+  background-color: white;
+  padding: 24px;
+  border-radius: 24px;
+  width: 50%;
+  margin-bottom: 16px;
+}
+section#nextevent .right-side .img img,
+section#lastevent .right-side .img img {
+  width: 100%;
+}
+section#nextevent .countdown,
+section#lastevent .countdown {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section#nextevent .countdown .time,
+section#lastevent .countdown .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#nextevent .countdown .time p.number,
+section#lastevent .countdown .time p.number {
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+}
+section#nextevent .countdown .time p.text,
+section#lastevent .countdown .time p.text {
+  font-size: 26px;
+  font-weight: 500;
+  color: white;
+}
+
+section#nextevent .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(19, 24, 80);
+  background: linear-gradient(135deg, rgb(19, 24, 80) 20%, rgb(0, 107, 206) 100%);
+  z-index: 0;
+}
+section#nextevent .shadow .glow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 140px 140px #fff;
+  /* outer cyan */
+}
+section#nextevent .shadow .glow:nth-child(1) {
+  top: 220px;
+  right: 300px;
+}
+section#nextevent .shadow .glow:nth-child(2) {
+  bottom: 120px;
+  left: calc(50% - 40px);
+}
+
+section#lastevent {
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#lastevent .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  z-index: 0;
+}
+section#lastevent .image {
+  z-index: 2;
+}
+section#lastevent .image img {
+  width: 80% !important;
+}
+
+section.lastevent2 {
+  margin-top: 0 !important;
+  padding: 0 80px !important;
+}
+
+.pop-up {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up div#acceptregistration,
+.pop-up div#accepted,
+.pop-up div#sessionerror {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: -moz-max-content;
+  height: max-content;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.pop-up div#acceptregistration h2,
+.pop-up div#accepted h2,
+.pop-up div#sessionerror h2 {
+  font-size: 28px;
+  color: #212529;
+}
+.pop-up div#acceptregistration .icon,
+.pop-up div#accepted .icon,
+.pop-up div#sessionerror .icon {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #37abdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid #303031;
+}
+.pop-up div#acceptregistration .icon p,
+.pop-up div#acceptregistration .icon i,
+.pop-up div#accepted .icon p,
+.pop-up div#accepted .icon i,
+.pop-up div#sessionerror .icon p,
+.pop-up div#sessionerror .icon i {
+  color: #006bce;
+  margin: 0;
+  font-size: 38px;
+}
+.pop-up div#acceptregistration .icon p,
+.pop-up div#accepted .icon p,
+.pop-up div#sessionerror .icon p {
+  font-weight: 500;
+}
+.pop-up div#acceptregistration .data-row,
+.pop-up div#accepted .data-row,
+.pop-up div#sessionerror .data-row {
+  display: flex;
+  flex-direction: row;
+}
+.pop-up div#acceptregistration .data-row p,
+.pop-up div#accepted .data-row p,
+.pop-up div#sessionerror .data-row p {
+  font-size: 18px;
+}
+.pop-up div#acceptregistration .data-row p span,
+.pop-up div#accepted .data-row p span,
+.pop-up div#sessionerror .data-row p span {
+  font-weight: 500;
+}
+.pop-up div#acceptregistration .data-row:nth-child(2),
+.pop-up div#accepted .data-row:nth-child(2),
+.pop-up div#sessionerror .data-row:nth-child(2) {
+  margin-top: 30px;
+}
+.pop-up div#acceptregistration .data-row:nth-child(3),
+.pop-up div#accepted .data-row:nth-child(3),
+.pop-up div#sessionerror .data-row:nth-child(3) {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pop-up div#acceptregistration .icon {
+  background-color: #37abdc;
+  border: 6px solid #303031;
+}
+.pop-up div#acceptregistration .icon p {
+  color: #006bce;
+}
+.pop-up div#accepted .icon {
+  background-color: #d9f8eb;
+  border: 6px solid #303031;
+}
+.pop-up div#accepted .icon i {
+  color: #3f8f3e;
+}
+.pop-up div#sessionerror .icon {
+  background-color: #fbdbe1;
+  border: 6px solid #303031;
+}
+.pop-up div#sessionerror .icon i {
+  color: #ff331f;
+}
+
+@media only screen and (max-width: 600px) {
+  section#events article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+    /*
+    .event:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    .event:not(:last-child) {
+      margin-bottom: 10px;
+    }*/
+  }
+  section#events article .event {
+    min-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    scroll-snap-align: center;
+  }
+  section#events article .event p.header {
+    margin-top: 6px;
+  }
+  section#events article .event .date-time {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  section#events article .event a {
+    position: initial;
+  }
+  section#events article .event:not(:first-child) {
+    margin-left: 10px;
+  }
+  section#events article .event:not(:last-child) {
+    margin-right: 10px;
+  }
+  section#lastevent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  section#lastevent .details {
+    width: 100%;
+    align-items: center;
+  }
+  section#lastevent .details p.name {
+    font-size: 26px;
+    text-align: center;
+  }
+  section#lastevent .details p.caption {
+    width: 100%;
+    text-align: justify;
+  }
+  section#lastevent .image {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section#nextevent {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  section#nextevent .details {
+    width: 100%;
+    align-items: center;
+  }
+  section#nextevent .details p.name {
+    font-size: 26px;
+    text-align: center;
+  }
+  section#nextevent .details p.caption {
+    width: 100%;
+    text-align: justify;
+  }
+  section#nextevent .img {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  section#nextevent .img img {
+    width: 100%;
+  }
+  section#nextevent .countdown {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=Events.css.map */

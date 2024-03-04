@@ -1,0 +1,120 @@
+h2.header {
+  margin-top: 20px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.managementstaff {
+  justify-content: center !important;
+}
+
+.dark-mode h2.header {
+  color: #f7f8f7;
+}
+.dark-mode .staffs .staff {
+  background-color: #141824;
+  border: 1px solid #323745;
+}
+.dark-mode .staffs .staff p {
+  text-align: center;
+  color: #f7f8f7;
+}
+.dark-mode .staffs .staff p.facultyname {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+.dark-mode .staffs .staff p.staffcount {
+  font-size: 18px;
+}
+.dark-mode .staffs .staff:hover p {
+  color: #006bce;
+}
+.dark-mode .staffs .staff:nth-child(n+5) {
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 601px) {
+  .staffs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px;
+    justify-content: space-between;
+  }
+  .staffs .staff {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 14px;
+  }
+  .staffs .staff img {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #87898f;
+  }
+  .staffs .staff p {
+    text-align: center;
+    color: #080708;
+  }
+  .staffs .staff p.facultyname {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .staffs .staff p.staffcount {
+    font-size: 18px;
+  }
+  .staffs .staff:hover p {
+    color: #006bce;
+  }
+  .staffs .staff:nth-child(n+5) {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .staffs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 15px;
+    justify-content: space-between;
+  }
+  .staffs .staff {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 14px;
+    margin: 10px 0;
+  }
+  .staffs .staff img {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #87898f;
+  }
+  .staffs .staff p {
+    text-align: center;
+    color: #080708;
+  }
+  .staffs .staff p.facultyname {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .staffs .staff p.staffcount {
+    font-size: 18px;
+  }
+  .staffs .staff:hover p {
+    color: #006bce;
+  }
+}/*# sourceMappingURL=APStaff.css.map */

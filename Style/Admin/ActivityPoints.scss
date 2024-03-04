@@ -1,0 +1,571 @@
+$darkblue: #0162e8;
+$blue: #006bce;
+$darkgray: #1e2329;
+$gray: #87898f;
+$lightgray: #f1f0f6;
+$lightblue: #37abdc;
+
+$box-sahdow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+.dark-mode {
+  input {
+    background-color: #141824;
+    border: 1px solid #323745;
+    color: white;
+    accent-color: white;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  #list {
+    .user {
+      .main-datas {
+        .user-name {
+          color: #f7f8f7 !important;
+        }
+      }
+      p {
+        color: #f7f8f7;
+      }
+      .actions {
+        i {
+          color: #dedad6;
+          background-color: #0f111a;
+        }
+      }
+    }
+  }
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #87898f;
+  outline: none;
+  &:focus {
+    border: 2px solid #0162e8;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #pointsstatistics {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    section {
+      p {
+        margin: 0;
+        font-size: 20;
+      }
+      p.value {
+        font-weight: 500;
+        font-size: 24px;
+      }
+    }
+    #all {
+      background-color: #cfe8ff;
+      p {
+        color: #006bce;
+      }
+    }
+    #incresases {
+      background-color: #d9f8eb;
+      p {
+        color: #3f8f3e;
+      }
+    }
+    #decrases {
+      background-color: #fbdbe1;
+      p {
+        color: #ff331f;
+      }
+    }
+  }
+
+  #lists {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .userlist {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 400px;
+      .users {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        align-self: flex-start;
+        width: 100%;
+        .user {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .picname {
+            display: flex;
+            flex-direction: row;
+          }
+          &:not(:first-child) {
+            margin-top: 5px;
+          }
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+          .main-datas {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            img {
+              width: 50px;
+              border-radius: 50%;
+            }
+            .details {
+              display: flex;
+              flex-direction: column;
+              margin-left: 10px;
+              align-self: flex-start;
+              width: auto;
+              p {
+                margin: 0;
+                font-size: 16px;
+              }
+              .username {
+                color: #080708;
+                font-weight: 600;
+              }
+              .department {
+                color: #aaa;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+            }
+            p.point {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 8px;
+              font-weight: 600;
+              padding: 6px;
+              margin-bottom: 0;
+              width: 70px;
+            }
+          }
+        }
+      }
+      .primary {
+        margin-top: 20px;
+        width: 100%;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+
+    #lastactivities {
+      p.point {
+        background-color: #cfe8ff;
+        color: $darkblue;
+      }
+    }
+    #hardworkers {
+      p.point {
+        background-color: #d9f8eb;
+        color: #3f8f3e;
+      }
+    }
+    #notworkers {
+      p.point {
+        background-color: #fbdbe1;
+        color: #ff331f;
+      }
+    }
+  }
+
+  #activitieslist {
+    width: 100%;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .user {
+      min-width: 350px;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px;
+      .main-datas {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 10px;
+        img {
+          width: 50px;
+          border-radius: 50%;
+        }
+        .user-name {
+          color: #080708;
+          font-weight: 500;
+          margin-left: 10px;
+          margin-bottom: 0;
+        }
+        p.activitypoint {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          font-weight: 600;
+          padding: 6px;
+          margin-bottom: 0;
+          width: 70px;
+        }
+        p.increment {
+          background-color: #d9f8eb;
+          color: #3f8f3e;
+        }
+        p.decrement {
+          background-color: #fbdbe1;
+          color: #ff331f;
+        }
+      }
+      .point-datas {
+        padding-top: 10px;
+        width: 100%;
+        display: grid;
+        flex-direction: column;
+        height: 100%;
+        p.sub-title {
+          width: 100%;
+          align-self: flex-start;
+          margin: 0;
+          font-size: 16px;
+          color: $gray;
+        }
+
+        .writer-datas {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-bottom: 10px;
+          position: relative;
+          align-self: flex-end;
+          img {
+            width: 50px;
+            border-radius: 50%;
+          }
+          p.writer {
+            color: #080708;
+            font-weight: 500;
+            margin-left: 10px;
+            margin-bottom: 0;
+          }
+          p.date {
+            width: 100%;
+            position: absolute;
+            text-align: end;
+            bottom: 0;
+            margin: 0;
+            font-size: 16px;
+            color: $gray;
+          }
+        }
+      }
+      p.activatepoint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 6px;
+        margin-bottom: 0;
+        width: 70px;
+        background-color: #cfe8ff;
+        color: #0162e8;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  #pointsstatistics {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    section {
+      margin: 10px 0;
+      p {
+        margin: 0;
+        font-size: 20;
+      }
+      p.value {
+        font-weight: 500;
+        font-size: 24px;
+      }
+    }
+    #all {
+      background-color: #cfe8ff;
+      p {
+        color: #006bce;
+      }
+    }
+    #incresases {
+      background-color: #d9f8eb;
+      p {
+        color: #3f8f3e;
+      }
+    }
+    #decrases {
+      background-color: #fbdbe1;
+      p {
+        color: #ff331f;
+      }
+    }
+  }
+
+  #lists {
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow: scroll;
+    .userlist {
+      margin: 15px 15px 15px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: auto;
+      .users {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        align-self: flex-start;
+        width: 100%;
+        .user {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .picname {
+            display: flex;
+            flex-direction: row;
+          }
+          &:not(:first-child) {
+            margin-top: 5px;
+          }
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+          .main-datas {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            img {
+              width: 50px;
+              border-radius: 50%;
+            }
+            .details {
+              display: flex;
+              flex-direction: column;
+              margin-left: 10px;
+              align-self: flex-start;
+              width: auto;
+              p {
+                margin: 0;
+                font-size: 16px;
+              }
+              .username {
+                color: #080708;
+                font-weight: 600;
+              }
+              .department {
+                color: #aaa;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+            }
+            p.point {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 8px;
+              font-weight: 600;
+              padding: 6px;
+              margin-bottom: 0;
+              width: 70px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .primary {
+        margin-top: 20px;
+        width: 100%;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+
+    #lastactivities {
+      p.point {
+        background-color: #cfe8ff;
+        color: $darkblue;
+      }
+    }
+    #hardworkers {
+      p.point {
+        background-color: #d9f8eb;
+        color: #3f8f3e;
+      }
+    }
+    #notworkers {
+      p.point {
+        background-color: #fbdbe1;
+        color: #ff331f;
+      }
+    }
+  }
+
+  #activitieslist {
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .user {
+      min-width: 350px;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 10px 0;
+      .main-datas {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 10px;
+        img {
+          width: 50px;
+          border-radius: 50%;
+        }
+        .user-name {
+          color: #080708;
+          font-weight: 500;
+          margin-left: 10px;
+          margin-bottom: 0;
+        }
+        p.activitypoint {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          font-weight: 600;
+          padding: 6px;
+          margin-bottom: 0;
+          width: 70px;
+        }
+        p.increment {
+          background-color: #d9f8eb;
+          color: #3f8f3e;
+        }
+        p.decrement {
+          background-color: #fbdbe1;
+          color: #ff331f;
+        }
+      }
+      .point-datas {
+        padding-top: 10px;
+        width: 100%;
+        display: grid;
+        flex-direction: column;
+        height: 100%;
+        p.sub-title {
+          width: 100%;
+          align-self: flex-start;
+          margin: 0;
+          font-size: 16px;
+          color: $gray;
+        }
+
+        .writer-datas {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-bottom: 10px;
+          position: relative;
+          align-self: flex-end;
+          img {
+            width: 50px;
+            border-radius: 50%;
+          }
+          p.writer {
+            color: #080708;
+            font-weight: 500;
+            margin-left: 10px;
+            margin-bottom: 0;
+          }
+          p.date {
+            width: 100%;
+            position: absolute;
+            text-align: end;
+            bottom: 0;
+            margin: 0;
+            font-size: 16px;
+            color: $gray;
+          }
+        }
+      }
+      p.activatepoint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 6px;
+        margin-bottom: 0;
+        width: 70px;
+        background-color: #cfe8ff;
+        color: #0162e8;
+      }
+    }
+  }
+}

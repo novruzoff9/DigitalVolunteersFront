@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəqəmsal Kabinet</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="Images/new Logo - white.png">
+    <link href="Style/AdminPage.css" rel="stylesheet" />
+    <link href="Style/FormUI.css" rel="stylesheet" />
+    <link href="Style/ProfileQRCode.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <i id="menubtn" class="fas fa-bars"></i>
+        <div class="header-center">
+            <a href="AdminPanel.html">
+                <!--<img src="Images/volunteers.png" alt="">-->
+                <img src="Images/new Logo - white.png" alt="">
+            </a>
+        </div>
+        <!--<i class="fas fa-sign-out-alt"></i>-->
+        <div class="header-right">
+            <i class="fas fa-bell notficationbtn"></i>
+            <img class="profilebtn" src="Images/Staff/Yagmur Novruzlu 2.jpg" alt="">
+        </div>
+        <div class="profile-menu mini-menu">
+            <ul>
+                <li class="profile-details">
+                    <img src="Images/Staff/Yagmur Novruzlu 2.jpg" alt="">
+                    <div class="name-role">
+                        <p class="name">Yağmur Novruzlu</p>
+                        <p class="department">Developer</p>
+                    </div>
+                </li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="UserProfile.html"><i class="fas fa-user"></i>
+                        <p>Profilim</p>
+                    </a></li>
+                <li><a href="ProfileQrCode.html"><i class="fas fa-qrcode"></i>
+                        <p>QR Kodum</p>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>
+                        <p>Parametrlər</p>
+                    </a></li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i>
+                        <p>Çıxış</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="notfication-menu mini-menu">
+            <p class="empty">Bildiriş yoxdur</p>
+        </div>
+    </header>
+
+
+    <aside>
+        <ul>
+            <li>
+                <a href="UserPanel.html">
+                    <i class="fas fa-home"></i>
+                    <p>Əsas səhifə</p>
+                </a>
+            </li>
+            <li>
+                <i class="fas fa-users"></i>
+                <p>Heyət üzvləri</p>
+            </li>
+            <li>
+                <i class="fas fa-comments"></i>
+                <p>Müzakirə</p>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+        <div id="QRCode">
+            <div class="details">
+                <p class="name">Yağmur Novruzlu</p>
+                <p class="faculty">Rəqəmsal İqtisadiyyat</p>
+            </div>
+            <section class="qr">
+                <div class="qrcode">
+                    <img src="Images/novruzoffQR.png" alt="">
+                    <!-- <div class="logo">
+                        <img src="Images/new Logo.png" alt="">
+                    </div> -->
+                </div>
+                
+                <p>Tədbirdə iştirakınızı təsdiq etmək üçün kodu oxutdurun.</p>
+            </section>
+            <section class="download">
+                <i class="fas fa-download"></i>
+                <p>Endir</p>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript/profiles.json"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            var width = $(document).width();
+
+            if (width < 600) {
+                $("aside").addClass("small-menu");
+            }
+            width -= $("aside").width();
+            width -= $("#profile").width();
+            width -= 101;
+            $("#content").width(width);
+
+            if ($("aside").hasClass("small-menu") == false) {
+                var mainWidth = $("main").width();
+                mainWidth -= 250;
+                if (width > 600) {
+                    $("main").width(mainWidth);
+                    $("main").css("margin-left", "250px");
+                }
+
+            }
+
+        });
+
+
+
+        $("#menubtn").click(function () {
+            $("aside").toggleClass("small-menu");
+            if ($("aside").hasClass("small-menu")) {
+                var width = $("main").width();
+                width += 170;
+                if (width > 600) {
+                    $("main").width(width);
+                    $("main").css("margin-left", "80px");
+                }
+            }
+            else {
+                var width = $("main").width();
+                width -= 170;
+                if (width > 600) {
+                    $("main").css("margin-left", "250px");
+                    $("main").width(width);
+                }
+            }
+        });
+
+        $(".profilebtn").click(function () {
+            $(".notfication-menu").hide();
+            $(".profile-menu").toggle();
+        });
+
+        $(".notficationbtn").click(function () {
+            $(".profile-menu").hide();
+            $(".notfication-menu").toggle();
+        });
+
+    </script>
+
+</body>
+
+</html>

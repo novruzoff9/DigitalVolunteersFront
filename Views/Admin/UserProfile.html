@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəqəmsal Kabinet</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/Images/new Logo - white.png">
+    <link href="/Style/AdminPage.css" rel="stylesheet" />
+    <link href="/Style/FormUI.css" rel="stylesheet" />
+    <link href="/Style/Admin/UserProfile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9025664961128837"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <i id="menubtn" class="fas fa-bars"></i>
+        <div class="header-center">
+            <a href="AdminPanel.html">
+                <!--<img src="Images/volunteers.png" alt="">-->
+                <img src="Images/new Logo - white.png" alt="">
+            </a>
+        </div>
+        <!--<i class="fas fa-sign-out-alt"></i>-->
+        <div class="header-right">
+            <i class="fas fa-sun themebtn"></i>
+            <i class="fas fa-bell notficationbtn"></i>
+            <img class="profilebtn" src="Images/Staff/Yagmur Novruzlu 2.jpg" alt="">
+        </div>
+        <div class="profile-menu mini-menu">
+            <ul>
+                <li class="profile-details">
+                    <img src="Images/Staff/Yagmur Novruzlu 2.jpg" alt="">
+                    <div class="name-role">
+                        <p class="name">Yağmur Novruzlu</p>
+                        <p class="department">Developer</p>
+                    </div>
+                </li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="UserProfile.html"><i class="fas fa-user"></i>
+                        <p>Profilim</p>
+                    </a></li>
+                <li><a href="ProfileQrCode.html"><i class="fas fa-qrcode"></i>
+                        <p>QR Kodum</p>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>
+                        <p>Parametrlər</p>
+                    </a></li>
+                <hr class="menu-line">
+                </hr>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i>
+                        <p>Çıxış</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="notfication-menu mini-menu">
+            <p class="empty">Bildiriş yoxdur</p>
+        </div>
+    </header>
+
+
+    <aside>
+        <ul>
+            <li>
+                <a href="UserPanel.html">
+                    <i class="fas fa-home"></i>
+                    <p>Əsas səhifə</p>
+                </a>
+            </li>
+            <li>
+                <i class="fas fa-users"></i>
+                <p>Heyət üzvləri</p>
+            </li>
+            <li>
+                <i class="fas fa-comments"></i>
+                <p>Müzakirə</p>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="profile">
+            <img id="profileimg" src="Images/Staff/Yagmur Novruzlu 2.jpg" alt="">
+            <p id="name">Yağmur Novruzov</p>
+            <p id="role">IT rəhbəri</p>
+            <p>Fakültə: <span id="faculty">Rəqəmsal İqtisadiyyat</span></p>
+            <p>İxtisas: <span id="department">İnformasiya Texnologiyaları</span></p>
+            <p>Kurs: <span id="course">II</span></p>
+            <p>Aktivlik balı: <span id="point">20</span></p>
+            <p>Qəbul ili: <span id="enteranceyear">2022</span></p>
+            <p>Telefon: <span id="phone">070-310-80-88</span></p>
+            <p>E-mail: <span id="mail">yagmurnov2@gmail.com</span></p>
+            <p>Doğum tarixi: <span id="birthdate">23 sentyabr 2005</span></p>
+            <p>Qeydiyyat tarixi: <span id="signdate">25 Sentyabr</span></p>
+            <button class="action-button primary"><i class="fas fa-envelope"></i> &nbsp;&nbsp;Xəta bildir</button>
+        </section>
+
+        <div id="about">
+            <div class="header">
+                <div data-tab="activity" class="tabbtn activetab">Aktivlik</div>
+                <div data-tab="facultystaff" class="tabbtn">Fakültə heyəti</div>
+                <div data-tab="departmentstaff" class="tabbtn">Departament heyəti</div>
+            </div>
+
+            <section id="activity">
+                <!--<p class="empty">Aktivlik barədə məlumat yoxdur</p>-->
+                <div class="activitypoint">
+                    <p class="date">25 Sen.</p>
+                    <p class="text">Bomba islerive gore sene 5 bal bonus! Bele devam ele kele</p>
+                    <p class="point">+5</p>
+                </div>
+                <div class="activitypoint">
+                    <p class="date">30 Sen.</p>
+                    <p class="text">Son vaxtlar gözümə yaxşı dəymirsən. Özüvü yığışdır.</p>
+                    <p class="point">-3</p>
+                </div>
+                <div class="activitypoint">
+                    <p class="date">8 Okt.</p>
+                    <p class="text">Belə baxıram danlaq işivə yarıyıb. Özüvü düzəltmisən. Belə dəvam elə məndə diyim hə.
+                        Təki həmişə belə olasan qagaa. Bu da mənnən sənə bonus.
+                        Belə baxıram danlaq işivə yarıyıb. Özüvü düzəltmisən. Belə dəvam elə məndə diyim hə.
+                        Təki həmişə belə olasan qagaa. Bu da mənnən sənə bonus.
+                    </p>
+                    <p class="point">+2</p>
+                </div>
+            </section>
+
+            <section id="facultystaff" class="staff">
+                <ul class="users">
+                    <li class="user">
+                        <div class="main-datas">
+                            <img src="Images/ProfilePic/NovruzoffPP.png" alt="">
+                            <div class="details">
+                                <p class="username">Novruzlu Yağmur</p>
+                                <p class="department">Developer</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="departmentstaff" class="staff">
+                <ul class="users">
+                    <li class="user">
+                        <div class="main-datas">
+                            <img src="Images/ProfilePic/NovruzoffPP.png" alt="">
+                            <div class="details">
+                                <p class="username">Novruzlu Yağmur</p>
+                                <p class="department">Developer</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-info"></i>
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="pop-up">
+            <section id="birthday">
+                <div class="data-column">
+                    <img data-detail="image" src="/Images/Staff/Yusif Ferecli.jpeg" alt="">
+                </div>
+                <div class="data-column">
+                    <h4>Doğum günün mübarək!</h4>
+                    <p>Əziz <span>Yusif</span>. <br> Səni yeni yaşın münasibətilə təbrik edir, fəaliyyətlərində və
+                        gələcək həyatında
+                        uğurlar arzu edirik. <br> Hörmətlə, Rəqəmsal Könüllülər Təşkilatı.💜</p>
+                </div>
+                <div class="data-column">
+                    <lord-icon src="https://cdn.lordicon.com/gqjpawbc.json" trigger="loop" delay="1000"
+                        colors="primary:#131850,secondary:#eee966" style="width:250px;height:250px">
+                    </lord-icon>
+                </div>
+                <i class="fas fa-times close"></i>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript/profiles.json"></script>
+    <script src="/JavaScript/Theme.js"></script>
+    <script>
+        var users = [];
+        var userstaff = [];
+
+        var user = JSON.parse(localStorage.getItem("user"));
+
+        $(".header-right img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details img").attr("src", user.profileimg);
+        $(".profile-menu .profile-details .name").text(user.name);
+        $(".profile-menu .profile-details .department").text(user.department);
+
+
+        $(".users").empty();
+
+        fetch("JavaScript/profiles.json")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                $.each(data, function (i, profile) {
+                    users.push(profile);
+                    if (profile.staff == user.staff) {
+                        userstaff.push(profile);
+                        $(".users").append(
+                            $("<li class='user'>").append(
+                                $("<div class='main-datas'>").append(
+                                    $("<img>").attr("src", profile.profileimg),
+                                    $("<div class='details'>").append(
+                                        $("<p class='username'>").text(profile.name),
+                                        $("<p class='department'>").text(profile.department)
+                                    )
+                                ),
+                                $("<div class='actions'>").append(
+                                    $('<i class="fas fa-info"></i>'),
+                                    $('<i class="fas fa-edit"></i>'),
+                                    $('<i class="fas fa-comments"></i>'),
+                                    $('<i class="fas fa-pen"></i>'),
+                                )
+                            )
+                        );
+                    }
+                });
+            });
+
+        $("#profile img").attr("src", user.profileimg);
+        $("#profile #username").text(user.username);
+        $("#profile #name").text(user.name);
+        if (user.role == "user") {
+            $("#profile #role").text("Üzv");
+        }
+        if (user.role == "admin") {
+            $("#profile #role").text("Admin");
+        }
+        $("#profile #staff").text(user.staff);
+        $("#profile #faculty").text(user.faculty);
+        $("#profile #point").text(user.point);
+
+
+
+        $(document).ready(function () {
+            var width = $(document).width();
+            width -= $("aside").width();
+            width -= $("#profile").width();
+            width -= 101;
+            $("#content").width(width);
+
+            if ($("aside").hasClass("small-menu") == false) {
+                var mainWidth = $("main").width();
+                mainWidth -= 250;
+                if (screen.width > 600) {
+                    $("main").width(mainWidth);
+                    $("main").css("margin-left", "250px");
+                }
+            }
+        });
+
+        $(".tabbtn").click(function () {
+            $(this).parent().siblings("section").hide();
+            $(".tabbtn").removeClass("activetab");
+            $(this).addClass("activetab");
+            var tab = $(this).attr("data-tab");
+            var screenheight = $("body").height();
+            if (tab == "activity") {
+                $("section#activity").show();
+            }
+            else if (tab == "facultystaff") {
+                $("section#facultystaff").show();
+            }
+            else if (tab == "departmentstaff") {
+                $("section#departmentstaff").show();
+            }
+
+        });
+
+        $("#menubtn").click(function () {
+            $("aside").toggleClass("small-menu");
+            if (screen.width > 600) {
+                if ($("aside").hasClass("small-menu")) {
+                    var width = $("main").width();
+                    width += 170;
+                    $("main").width(width);
+                    $("main").css("margin-left", "80px");
+                    $("aside ul").width("50px");
+                }
+                else {
+                    $("main").css("margin-left", "250px");
+                    var width = $("main").width();
+                    width -= 170;
+                    $("main").width(width);
+                    $("aside ul").width("220px");
+                }
+            }
+            else {
+                if ($("aside").hasClass("small-menu")) {
+                    $("aside").height($(document).height());
+                }
+                else {
+                    $("aside").height(0);
+                }
+            }
+        });
+
+        $(".profilebtn").click(function () {
+            $(".notfication-menu").hide();
+            $(".profile-menu").toggle();
+        });
+
+        $(".notficationbtn").click(function () {
+            $(".profile-menu").hide();
+            $(".notfication-menu").toggle();
+        });
+
+    </script>
+
+    <script>
+        var height = $(document).height();
+        $(".pop-up").height(height);
+        $("#birthday").parent().css("display", "flex");
+        $(".close").click(function () {
+            $("#birthday").parent().css("display", "none");
+        });
+    </script>
+</body>
+
+</html>

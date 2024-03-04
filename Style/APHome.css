@@ -1,0 +1,565 @@
+h2 {
+  margin: 0 25px;
+}
+
+.dark-mode section,
+.dark-mode svg {
+  background-color: #141824;
+  border: 1px solid #323745;
+}
+.dark-mode section p,
+.dark-mode svg p {
+  color: white;
+}
+.dark-mode section .user p,
+.dark-mode svg .user p {
+  color: white;
+}
+.dark-mode section p.username,
+.dark-mode svg p.username {
+  color: white !important;
+}
+
+@media only screen and (min-width: 601px) {
+  .half-width {
+    margin: 15px;
+    width: calc(50% - 30px);
+  }
+  .half-width .event {
+    width: calc(50% - 15px) !important;
+  }
+  #digi-greeting {
+    margin: 15px;
+    width: calc(70% - 30px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgb(0, 107, 206);
+    background: linear-gradient(90deg, rgb(0, 107, 206) 0%, rgb(19, 24, 80) 100%);
+  }
+  #digi-greeting img {
+    width: 300px;
+  }
+  #digi-greeting .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  #digi-greeting .welcome p {
+    color: white;
+    text-align: end;
+  }
+  #digi-greeting .welcome p.hello {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #digi-greeting .welcome p.digi {
+    font-size: 20px;
+  }
+  #hardworkers {
+    width: calc(30% - 30px);
+    transition: 0.4s;
+  }
+  #hardworkers:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  .userlist {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .userlist .users {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .userlist .users .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .userlist .users .user .picname {
+    display: flex;
+    flex-direction: row;
+    min-width: 280px;
+  }
+  .userlist .users .user:not(:first-child) {
+    margin-top: 5px;
+  }
+  .userlist .users .user:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .userlist .users .user .main-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .userlist .users .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  .userlist .users .user .main-datas .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  .userlist .users .user .main-datas .details p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .userlist .users .user .main-datas .details .username {
+    color: #080708;
+    font-weight: 600;
+  }
+  .userlist .users .user .main-datas .details .department {
+    color: #aaa;
+  }
+  .userlist .users .user .main-datas p.point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #37abdc;
+    color: #131850;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+  }
+  .userlist .primary {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .userlist a:hover {
+    color: #fff;
+  }
+  #counts {
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #counts section {
+    width: calc(25% - 15px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  #counts section i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: #006bce;
+  }
+  #counts section .statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  #counts section .statistics .change p {
+    margin: 0;
+    margin-left: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  #counts section .statistics .change .increase {
+    color: #3f8f3e;
+    background-color: #d9f8eb;
+  }
+  #counts section .statistics .change .decrase {
+    color: #ff331f;
+    background-color: #fbdbe1;
+  }
+  #counts section .statistics .data-value p.value {
+    text-align: end;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+  }
+  #counts section .statistics .data-value p.data {
+    text-align: end;
+    font-size: 18px;
+    margin: 0;
+  }
+  #counts section .statistics .last-month p {
+    text-align: end;
+    margin: 0;
+    color: #87898f;
+  }
+  #counts section:not(:first-child) {
+    margin-left: 15px;
+  }
+  #counts section:not(:last-child) {
+    margin-right: 15px;
+  }
+  #counts section:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  #weeklylogin {
+    width: calc(50% - 30px);
+    margin: 15px;
+    position: relative;
+  }
+  #weeklylogin .piechart svg {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s;
+  }
+  #weeklylogin .piechart svg:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  #lastactivties {
+    height: 460px;
+    width: calc(50% - 30px);
+    transition: 0.4s;
+  }
+  #lastactivties p.change {
+    margin: 0;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    right: 60px;
+    width: 80px;
+    text-align: center;
+  }
+  #lastactivties .increase {
+    color: #3f8f3e;
+    background-color: #d9f8eb;
+  }
+  #lastactivties .decrase {
+    color: #ff331f;
+    background-color: #fbdbe1;
+  }
+  #lastactivties .date {
+    color: #080708;
+    background-color: #ccc;
+  }
+  #lastactivties:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  #events {
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px !important;
+  }
+  .event {
+    transition: 0.4s;
+    width: calc(25% - 22.5px) !important;
+  }
+  .event p.title {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600 !important;
+  }
+  .event:not(:first-child) {
+    margin-left: 15px;
+  }
+  .event:not(:last-child) {
+    margin-right: 15px;
+  }
+  .event:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) !important;
+  }
+  #events + span {
+    width: 100%;
+  }
+  #events + span a {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+  }
+  .half-width {
+    position: relative;
+  }
+  .half-width .piechart svg {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s;
+  }
+  .half-width .piechart svg:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #digi-greeting {
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgb(0, 107, 206);
+    background: linear-gradient(90deg, rgb(0, 107, 206) 0%, rgb(19, 24, 80) 100%);
+  }
+  #digi-greeting img {
+    width: 300px;
+  }
+  #digi-greeting .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  #digi-greeting .welcome p {
+    color: white;
+    text-align: center;
+  }
+  #digi-greeting .welcome p.hello {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #digi-greeting .welcome p.digi {
+    font-size: 20px;
+  }
+  .half-width {
+    margin: 15px;
+    width: 100%;
+  }
+  .half-width .event {
+    width: calc(50% - 15px);
+  }
+  #hardworkers {
+    width: 100%;
+    transition: 0.4s;
+  }
+  #hardworkers:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  .userlist {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .userlist .users {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .userlist .users .user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .userlist .users .user .picname {
+    display: flex;
+    flex-direction: row;
+  }
+  .userlist .users .user:not(:first-child) {
+    margin-top: 5px;
+  }
+  .userlist .users .user:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .userlist .users .user .main-datas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .userlist .users .user .main-datas img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  .userlist .users .user .main-datas .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-self: flex-start;
+    width: 140px;
+  }
+  .userlist .users .user .main-datas .details p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .userlist .users .user .main-datas .details .username {
+    color: #080708;
+    font-weight: 600;
+  }
+  .userlist .users .user .main-datas .details .department {
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .userlist .users .user .main-datas p.point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #37abdc;
+    color: #131850;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px;
+    margin-bottom: 0;
+    width: 70px;
+  }
+  .userlist .primary {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .userlist a:hover {
+    color: #fff;
+  }
+  #counts {
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #counts section {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  #counts section i {
+    display: none;
+  }
+  #counts section .statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #counts section .statistics .change p {
+    margin: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  #counts section .statistics .change .increase {
+    color: #3f8f3e;
+    background-color: #d9f8eb;
+  }
+  #counts section .statistics .change .decrase {
+    color: #ff331f;
+    background-color: #fbdbe1;
+  }
+  #counts section .statistics .data-value p.value {
+    text-align: end;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+  }
+  #counts section .statistics .data-value p.data {
+    text-align: end;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+  #counts section .statistics .last-month p {
+    text-align: end;
+    margin: 0;
+    color: #87898f;
+  }
+  #counts section:nth-child(n+3) {
+    margin-top: 15px;
+  }
+  #counts section:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  #weeklylogin {
+    width: 100%;
+    margin: 15px;
+    position: relative;
+  }
+  #weeklylogin .piechart svg {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s;
+  }
+  #weeklylogin .piechart svg:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  #lastactivties {
+    height: 460px;
+    width: 100%;
+    transition: 0.4s;
+  }
+  #lastactivties p.change {
+    margin: 0;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    right: 60px;
+    width: 80px;
+    text-align: center;
+  }
+  #lastactivties .increase {
+    color: #3f8f3e;
+    background-color: #d9f8eb;
+    width: 80px;
+  }
+  #lastactivties .decrase {
+    color: #ff331f;
+    background-color: #fbdbe1;
+    width: 80px;
+  }
+  #lastactivties .point {
+    display: none;
+  }
+  #lastactivties .date {
+    display: none;
+    color: #080708;
+    background-color: #ccc;
+  }
+  #lastactivties:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  .half-width {
+    position: relative;
+  }
+  .half-width .piechart svg {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s;
+  }
+  .half-width .piechart svg:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+}/*# sourceMappingURL=APHome.css.map */
