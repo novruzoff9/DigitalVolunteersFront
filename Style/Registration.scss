@@ -1,0 +1,60 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    img:nth-child(1) {
+      width: 179.52px;
+      height: 172.47px;
+    }
+    img:nth-child(2) {
+      width: 132px;
+      height: 130px;
+    }
+  }
+  form {
+    label {
+      font-weight: 500;
+    }
+    .w-half {
+      width: calc(50% - 10px);
+    }
+    .w-quarter {
+      width: calc(25% - 10px);
+    }
+    .input-tel {
+      position: relative;
+      input {
+        padding-left: 60px;
+      }
+      .telstart {
+        background-color: #87898f;
+        height: 40px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        font-weight: 500;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

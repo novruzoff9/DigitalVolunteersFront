@@ -1,0 +1,58 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+main section {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .logos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+main .logos img:nth-child(1) {
+  width: 179.52px;
+  height: 172.47px;
+}
+main .logos img:nth-child(2) {
+  width: 132px;
+  height: 130px;
+}
+main form label {
+  font-weight: 500;
+}
+main form .w-half {
+  width: calc(50% - 10px);
+}
+main form .w-quarter {
+  width: calc(25% - 10px);
+}
+main form .input-tel {
+  position: relative;
+}
+main form .input-tel input {
+  padding-left: 60px;
+}
+main form .input-tel .telstart {
+  background-color: #87898f;
+  height: 40px;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-weight: 500;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=Registration.css.map */
