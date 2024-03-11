@@ -36,6 +36,11 @@ main form .w-half {
 main form .w-quarter {
   width: calc(25% - 10px);
 }
+main form #errormsg {
+  width: 100%;
+  text-align: center;
+  color: #ff331f;
+}
 main form .input-tel {
   position: relative;
 }

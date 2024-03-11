@@ -56,11 +56,11 @@
                 </div>
                 <div class="d-flex flex-row w-80 justify-content-around mt-3">
                     <div class="d-flex flex-column w-half">
-                        <label for="FirstName">Email:</label>
-                        <input id="FirstName" type="email" class="daisy">
+                        <label for="Email">Email:</label>
+                        <input id="Email" type="email" class="daisy">
                     </div>
                     <div class="d-flex flex-column w-half ">
-                        <label for="LastName">Telefon:</label>
+                        <label for="PhoneNumber">Telefon:</label>
                         <div class="input-tel w-100">
                             <input data-val="true" data-val-number="The field PhoneNumber must be a number."
                                 data-val-required="The PhoneNumber field is required." id="PhoneNumber"
@@ -122,26 +122,27 @@
                 </div>
                 <div class="d-flex flex-row w-80 justify-content-around mt-3">
                     <div class="d-flex flex-column w-quarter ">
-                        <label for="LastName">Doğum tarixi:</label>
-                        <input id="LastName" type="date" class="daisy">
+                        <label for="BirthDate">Doğum tarixi:</label>
+                        <input id="BirthDate" type="date" class="daisy">
                     </div>
                     <div class="d-flex flex-column w-quarter">
-                        <label for="FirstName">Qəbul ili:</label>
-                        <input id="FirstName" type="number" class="daisy">
+                        <label for="EntranceYear">Qəbul ili:</label>
+                        <input id="EntranceYear" type="number" class="daisy">
                     </div>
                     <div class="d-flex flex-column w-quarter ">
-                        <label for="LastName">Qrup:</label>
-                        <input id="LastName" type="text" class="daisy">
+                        <label for="Group">Qrup:</label>
+                        <input id="Group" type="text" class="daisy">
                     </div>
                     <div class="d-flex flex-column w-quarter ">
-                        <label for="LastName">Cins:</label>
-                        <select name="Faculty" placeholder="Fakültə" class="daisy">
+                        <label for="Gender">Cins:</label>
+                        <select name="Faculty" placeholder="Cins" class="daisy">
                             <option value="">Cinsi seçin</option>
                             <option value="Male">Kişi</option>
                             <option value="Female">Qadın</option>
                         </select>
                     </div>
                 </div>
+                <p id="errormsg"></p>
                 <div class="d-flex flex-row w-80 justify-content-around mt-3">
                     <div class="d-flex flex-column w-half">
                         <button id="confirm" class="action-button primary">Təsdiq et</button>
@@ -157,24 +158,40 @@
     <script type="text/javascript" src="/JavaScript/login.js"></script>
 
     <script>
+        $(document).ready(function () {
+            var now = new Date();
+            var year = now.getFullYear();
+
+            var maxDatetime = year - 15 + '-' + 12 + '-' + 31;
+
+            $('#BirthDate').attr('max', maxDatetime);
+        });
+
+
         var height = $(window).height();
         console.log(height);
         $("section").css("height", height);
         $("#confirm").click(function () {
             event.preventDefault();
+            let nullinput = false;
+            let telphone = false;
             $("form input").each(function () {
                 if ($(this).val() === "") {
-                    $(this).css("border-color", "#f00");
+                    $(this).css("border-color", "#ff331f");
+                    nullinput = true;
+                    if (nullinput) {
+                    }
                 }
                 else {
                     $(this).css("border-color", "#3f8f3e");
                 }
                 if ($(this).attr("id") === "PhoneNumber") {
                     if ($(this).val() === "") {
-                        $(this).css("border-color", "#f00");
+                        $(this).css("border-color", "#ff331f");
                     }
                     else if ($(this).val().length != 9) {
-                        $(this).css("border-color", "#f00");
+                        $(this).css("border-color", "#ff331f");
+                        telphone = true;
                     }
                     else {
                         $(this).css("border-color", "#3f8f3e");
@@ -183,14 +200,41 @@
             });
             $("form select").each(function () {
                 if ($(this).val() === "") {
-                    $(this).css("border-color", "#f00");
+                    $(this).css("border-color", "#ff331f");
+                    nullinput = true;
+                    if (nullinput) {
+                    }
                 }
                 else {
                     $(this).css("border-color", "#3f8f3e");
                 }
             });
-
-
+            var now = new Date();
+            function isValidEmail(email) {
+                // Regular expression for validating an email address
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+            if (nullinput) {
+                $("#errormsg").html("*bütün məlumatlar doldurulmalıdır.");
+            }
+            else if(!(isValidEmail($("#Email").val()))){
+                $("#errormsg").text("*email hesabını düzgün daxil edin");
+                $("#Email").css("border-color", "#ff331f");
+            }
+            else if (telphone) {
+                $("#errormsg").text("*telefon nömrəsini düzgün daxil edin");
+            }
+            else if ($("#EntranceYear").val() > now.getFullYear() || $("#EntranceYear").val() < (now.getFullYear() - 6)) {
+                $("#EntranceYear").css("border-color", "#ff331f");
+                $("#errormsg").text("*qəbul ilini düzgün daxil edin");
+            }
+            else {
+                //Ajax kodune kecid
+                //Ajax kodune kecid
+                //Ajax kodune kecid
+                $("#errormsg").text("");
+            }
         });
     </script>
 

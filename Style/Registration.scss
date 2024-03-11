@@ -36,6 +36,11 @@ main {
     .w-quarter {
       width: calc(25% - 10px);
     }
+    #errormsg{
+      width: 100%;
+      text-align: center;
+      color: #ff331f;
+    }
     .input-tel {
       position: relative;
       input {
