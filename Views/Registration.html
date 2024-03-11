@@ -43,7 +43,7 @@
                 <img src="/Images/unec logo png.png" alt="">
             </div>
             <h3>Qeydiyyat paneli</h3>
-            <form action="" class="w-100 mt-3">
+            <form class="w-100 mt-3">
                 <div class="d-flex flex-row w-80 justify-content-around">
                     <div class="d-flex flex-column w-half">
                         <label for="FirstName">Ad:</label>
@@ -64,7 +64,8 @@
                         <div class="input-tel w-100">
                             <input data-val="true" data-val-number="The field PhoneNumber must be a number."
                                 data-val-required="The PhoneNumber field is required." id="PhoneNumber"
-                                name="PhoneNumber" type="number" value="" class="daisy w-100" placeholder="12-345-67-89">
+                                name="PhoneNumber" type="number" value="" class="daisy w-100"
+                                placeholder="12-345-67-89">
                             <div class="telstart">+994</div>
                         </div>
                     </div>
@@ -135,6 +136,7 @@
                     <div class="d-flex flex-column w-quarter ">
                         <label for="LastName">Cins:</label>
                         <select name="Faculty" placeholder="Fakültə" class="daisy">
+                            <option value="">Cinsi seçin</option>
                             <option value="Male">Kişi</option>
                             <option value="Female">Qadın</option>
                         </select>
@@ -142,7 +144,7 @@
                 </div>
                 <div class="d-flex flex-row w-80 justify-content-around mt-3">
                     <div class="d-flex flex-column w-half">
-                        <button class="action-button primary">Təsdiq et</button>
+                        <button id="confirm" class="action-button primary">Təsdiq et</button>
                     </div>
                 </div>
             </form>
@@ -158,6 +160,38 @@
         var height = $(window).height();
         console.log(height);
         $("section").css("height", height);
+        $("#confirm").click(function () {
+            event.preventDefault();
+            $("form input").each(function () {
+                if ($(this).val() === "") {
+                    $(this).css("border-color", "#f00");
+                }
+                else {
+                    $(this).css("border-color", "#3f8f3e");
+                }
+                if ($(this).attr("id") === "PhoneNumber") {
+                    if ($(this).val() === "") {
+                        $(this).css("border-color", "#f00");
+                    }
+                    else if ($(this).val().length != 9) {
+                        $(this).css("border-color", "#f00");
+                    }
+                    else {
+                        $(this).css("border-color", "#3f8f3e");
+                    }
+                }
+            });
+            $("form select").each(function () {
+                if ($(this).val() === "") {
+                    $(this).css("border-color", "#f00");
+                }
+                else {
+                    $(this).css("border-color", "#3f8f3e");
+                }
+            });
+
+
+        });
     </script>
 
 </body>

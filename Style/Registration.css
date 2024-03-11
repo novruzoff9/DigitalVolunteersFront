@@ -44,15 +44,15 @@ main form .input-tel input {
 }
 main form .input-tel .telstart {
   background-color: #87898f;
-  height: 40px;
-  width: 50px;
+  height: 36px;
+  width: 46px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   font-weight: 500;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 2px;
 }/*# sourceMappingURL=Registration.css.map */
