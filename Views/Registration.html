@@ -42,7 +42,7 @@
                 </a>
                 <img src="/Images/unec logo png.png" alt="">
             </div>
-            <h3>Qeydiyyat paneli</h3>
+            <h3 class="mt-3">Rəqəmsal Könüllülər Təşkilatına üzv qeydiyyat paneli</h3>
             <form class="w-100 mt-3">
                 <div class="d-flex flex-row w-80 justify-content-around">
                     <div class="d-flex flex-column w-half">
@@ -167,6 +167,11 @@
             $('#BirthDate').attr('max', maxDatetime);
         });
 
+        function isValidEmail(email) {
+            // Regular expression for validating an email address
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
 
         var height = $(window).height();
         console.log(height);
@@ -175,12 +180,11 @@
             event.preventDefault();
             let nullinput = false;
             let telphone = false;
+            let email = false;
             $("form input").each(function () {
                 if ($(this).val() === "") {
                     $(this).css("border-color", "#ff331f");
                     nullinput = true;
-                    if (nullinput) {
-                    }
                 }
                 else {
                     $(this).css("border-color", "#3f8f3e");
@@ -192,6 +196,15 @@
                     else if ($(this).val().length != 9) {
                         $(this).css("border-color", "#ff331f");
                         telphone = true;
+                    }
+                    else {
+                        $(this).css("border-color", "#3f8f3e");
+                    }
+                }
+                if ($(this).attr("id") === "Email") {
+                    if (!(isValidEmail($(this).val()))) {
+                        $(this).css("border-color", "#ff331f");
+                        email = true;
                     }
                     else {
                         $(this).css("border-color", "#3f8f3e");
@@ -210,29 +223,26 @@
                 }
             });
             var now = new Date();
-            function isValidEmail(email) {
-                // Regular expression for validating an email address
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return emailRegex.test(email);
-            }
+
             if (nullinput) {
                 $("#errormsg").html("*bütün məlumatlar doldurulmalıdır.");
             }
-            else if(!(isValidEmail($("#Email").val()))){
-                $("#errormsg").text("*email hesabını düzgün daxil edin");
-                $("#Email").css("border-color", "#ff331f");
-            }
             else if (telphone) {
                 $("#errormsg").text("*telefon nömrəsini düzgün daxil edin");
+            }
+            else if (email) {
+                $("#errormsg").text("*email hesabını düzgün daxil edin");
             }
             else if ($("#EntranceYear").val() > now.getFullYear() || $("#EntranceYear").val() < (now.getFullYear() - 6)) {
                 $("#EntranceYear").css("border-color", "#ff331f");
                 $("#errormsg").text("*qəbul ilini düzgün daxil edin");
             }
             else {
-                //Ajax kodune kecid
-                //Ajax kodune kecid
-                //Ajax kodune kecid
+                //Ajax kodlariii
+                //Ajax kodlariii
+                //Ajax kodlariii
+                //Ajax kodlariii
+                window.location.href = "/Views/Verification.html";
                 $("#errormsg").text("");
             }
         });
