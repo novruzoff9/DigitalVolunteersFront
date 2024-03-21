@@ -52,17 +52,13 @@ body > header {
   justify-content: space-between;
   align-items: center;
   top: 0;
-}
-body > header * {
-  transition: all 0.8s ease-in-out;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
+  height: 80px;
 }
 body > header .header-left {
   width: 15%;
 }
 body > header .header-left img {
-  width: 100px;
+  width: 70px;
 }
 body > header .header-left i {
   display: none;
@@ -82,7 +78,7 @@ body > header .header-mid ul {
   justify-content: space-between;
 }
 body > header .header-mid ul li {
-  font-size: 24px;
+  font-size: 18px;
   color: #bfbfbf;
   font-weight: 500;
   padding: 0 5px;
@@ -99,24 +95,24 @@ body > header .header-right {
   width: 15%;
   display: flex;
   justify-content: end;
+  align-items: center;
+}
+body > header .header-right i {
+  margin-left: 10px;
 }
 body > header .header-right a {
-  padding: 8px 24px;
+  padding: 4px 20px;
   background-color: #006bce;
   color: #fff;
-  font-size: 24px;
-  border-radius: 50px;
-  font-weight: 500;
-  transition: 0.4s;
-  border: 2px solid #006bce;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 400;
+  margin-right: 5px;
+  transition: 0.2s;
+  border: 2px solid #063086;
 }
 body > header .header-right a:hover {
-  color: #006bce;
-  background-color: transparent;
-}
-
-body > nav {
-  display: none;
+  background-color: #063086;
 }
 
 section:not(#home) {
@@ -142,6 +138,69 @@ section:not(#home) article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+body > nav {
+  display: none;
+}
+
+.social-mobile {
+  opacity: 0;
+}
+.social-mobile li {
+  font-size: 18px !important;
+  width: 200px !important;
+  font-weight: 400;
+}
+
+.social,
+.social-mobile {
+  position: fixed;
+  left: 0;
+  bottom: 50%;
+  transform: translate(0, 50%);
+  padding: 0;
+  z-index: 9999;
+}
+.social li,
+.social-mobile li {
+  display: block;
+  margin: 5px 0;
+  background: rgba(0, 0, 0, 0.36);
+  width: 150px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(-100px);
+  cursor: pointer;
+  transition: 0.5s !important;
+}
+.social li span,
+.social-mobile li span {
+  margin-right: 10px;
+  color: #fff;
+}
+.social li:hover,
+.social-mobile li:hover {
+  transform: translate(0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social a,
+.social-mobile a {
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body > footer {
@@ -215,6 +274,27 @@ body > footer .links a i {
 }
 
 @media only screen and (max-width: 600px) {
+  .social {
+    display: none;
+  }
+  .mobile-nav .social-mobile {
+    opacity: 1;
+    position: fixed;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .mobile-nav .social-mobile li {
+    transform: translate(0);
+    width: 200px;
+    border-radius: 0;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
   body > header {
     position: fixed;
     top: 0;
@@ -264,36 +344,40 @@ body > footer .links a i {
     border-radius: 8px;
     font-weight: 500;
   }
-  .mobile-nav {
-    display: flex;
+  nav {
+    display: flex !important;
     position: fixed;
-    top: 60px;
-    left: 0;
+    top: 80px;
+    left: -100%;
     height: 100vh;
     z-index: 4;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6666666667);
+    transition: 0.2s;
   }
-  .mobile-nav ul {
+  nav.mobile-nav {
+    left: 0 !important;
+  }
+  nav ul {
     background-color: #1e2329;
     list-style: none;
     padding-right: 20px;
     padding-top: 10px;
     width: 100%;
   }
-  .mobile-nav ul li {
+  nav ul li {
     color: white;
     font-weight: 500;
     font-size: 24px;
     text-align: center;
     height: 50px;
   }
-  .mobile-nav ul .homepagelink {
+  nav ul .homepagelink {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  .mobile-nav ul img {
+  nav ul img {
     width: 60px;
     margin-right: 10px;
   }
