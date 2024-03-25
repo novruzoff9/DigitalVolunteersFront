@@ -29,9 +29,9 @@ section#home article .article-right {
 section#home article .article-right p.slogan {
   color: white;
   font-weight: 500;
-  font-size: 98px;
+  font-size: 54px;
   text-align: center;
-  font-family: "Caramel", cursive;
+  font-family: "IBM Plex Mono";
 }
 section#home article .article-right .links {
   display: flex;
@@ -39,31 +39,38 @@ section#home article .article-right .links {
   min-width: 600px;
   justify-content: space-around;
 }
-section#home article .article-right .links a {
-  padding: 8px 24px;
-  font-size: 24px;
-  border-radius: 50px;
+section#home article .article-right .links .volun {
+  padding: 8px 30px;
+  font-size: 18px;
+  border-radius: 5px;
   font-weight: 500;
-}
-section#home article .article-right .links a:first-child {
   background-color: #006bce;
   color: white;
 }
-section#home article .article-right .links a:nth-child(2) {
-  color: #006bce;
+section#home article .article-right .links .insta {
   position: relative;
+  padding: 8px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: #006bce;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-section#home article .article-right .links a:nth-child(2) i {
-  font-size: 14px;
-  position: absolute;
-  margin-left: 4px;
-  top: 12px;
+section#home article .article-right .links .insta a {
+  font-weight: 400;
+  color: #fff;
+}
+section#home article .article-right .links .insta i {
+  font-size: 21px;
+  margin-right: 10px;
+  color: #fff;
 }
 section#home article .article-right .statistics {
   margin-top: 48px;
-  border: 3px solid #006bce;
+  border: 1px solid #fff;
   padding: 20px;
-  border-radius: 36px;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   width: 60%;
@@ -128,7 +135,7 @@ section#home footer * {
 
 section#why-us article {
   display: flex;
-  justify-content: space-around;
+  overflow: auto;
 }
 section#why-us article .work {
   width: calc(20% + 10px);
@@ -556,6 +563,14 @@ section.lastevent2 {
 }
 
 @media only screen and (max-width: 600px) {
+  section#why-us article {
+    flex-direction: column;
+    align-items: center;
+  }
+  section#why-us .work {
+    min-width: 80%;
+    margin: 10px 20px;
+  }
   section#home {
     justify-content: space-between;
   }
@@ -572,12 +587,13 @@ section.lastevent2 {
   }
   section#home article .article-left img {
     width: 80%;
+    margin-left: -30px;
   }
   section#home article .article-right {
     width: 100%;
   }
   section#home article .article-right p.slogan {
-    font-size: 52px;
+    font-size: 32px;
   }
   section#home article .article-right a {
     font-size: 20px;
@@ -585,9 +601,18 @@ section.lastevent2 {
   section#home article .article-right .links {
     width: 100% !important;
     min-width: 0 !important;
+    flex-direction: column;
+    align-items: center;
   }
   section#home article .article-right .links a {
     font-size: 16px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 5px;
+  }
+  section#home article .article-right .links .insta {
+    width: -moz-fit-content;
+    width: fit-content;
   }
   section#home article .article-right .statistics {
     width: 100% !important;

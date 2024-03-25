@@ -1,65 +1,499 @@
-main {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  section {
-    width: 40%;
+$box-sahdow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+@media only screen and (min-width: 601px) {
+  main {
+    width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
-  .logos {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    img:nth-child(1) {
-      width: 179.52px;
-      height: 172.47px;
+    align-items: baseline;
+    section {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    img:nth-child(2) {
-      width: 132px;
-      height: 130px;
-    }
-  }
-  form {
-    label {
-      font-weight: 500;
-    }
-    .w-half {
-      width: calc(50% - 10px);
-    }
-    .w-quarter {
-      width: calc(25% - 10px);
-    }
-    #errormsg{
+    .logos {
+      display: flex;
+      flex-direction: row;
       width: 100%;
-      text-align: center;
-      color: #ff331f;
-    }
-    .input-tel {
-      position: relative;
-      input {
-        padding-left: 60px;
+      justify-content: space-between;
+      img:nth-child(1) {
+        width: 179.52px;
+        height: 172.47px;
       }
-      .telstart {
-        background-color: #87898f;
-        height: 36px;
-        width: 46px;
+      img:nth-child(2) {
+        width: 132px;
+        height: 130px;
+      }
+    }
+    form {
+      label {
+        font-weight: 500;
+      }
+      .w-half {
+        width: calc(50% - 10px);
+      }
+      .w-quarter {
+        width: calc(25% - 10px);
+      }
+      #errormsg {
+        width: 100%;
+        text-align: center;
+        color: #ff331f;
+      }
+      .input-tel {
+        position: relative;
+        input {
+          padding-left: 60px;
+        }
+        .telstart {
+          background-color: #87898f;
+          height: 36px;
+          width: 46px;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          font-weight: 500;
+          top: 2px;
+          left: 2px;
+        }
+      }
+    }
+  }
+  .pop-up {
+    width: 100%;
+    background-color: #000c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    div#reginfo {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      height: max-content;
+      box-shadow: $box-sahdow;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      max-width: 600px;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      width: fit-content;
+      h2 {
+        font-size: 28px;
+        color: #070707;
+      }
+      .icon {
         position: absolute;
+        top: -40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #37abdc;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        font-weight: 500;
-        top: 2px;
-        left: 2px;
+        border: 6px solid #303031;
+        p,
+        i {
+          color: #006bce;
+          margin: 0;
+          font-size: 38px;
+        }
+        p {
+          font-weight: 500;
+        }
+      }
+      .data-row {
+        display: flex;
+        flex-direction: row;
+        p {
+          font-size: 18px;
+          span {
+            font-weight: 500;
+          }
+        }
+        &:nth-child(2) {
+          margin-top: 30px;
+        }
+        &:nth-child(3) {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+        }
       }
     }
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    section {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+    }
+    .logos {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      img:nth-child(1) {
+        width: 179.52px;
+        height: 172.47px;
+      }
+      img:nth-child(2) {
+        width: 132px;
+        height: 130px;
+      }
+    }
+    form {
+      div {
+        flex-wrap: wrap;
+      }
+      label {
+        font-weight: 500;
+      }
+      .w-half {
+        width: calc(100% - 10px);
+      }
+      .w-quarter {
+        width: calc(50% - 10px);
+      }
+      #errormsg {
+        width: 100%;
+        text-align: center;
+        color: #ff331f;
+      }
+      .input-tel {
+        position: relative;
+        input {
+          padding-left: 60px;
+        }
+        .telstart {
+          background-color: #87898f;
+          height: 36px;
+          width: 46px;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          font-weight: 500;
+          top: 2px;
+          left: 2px;
+        }
+      }
+    }
+  }
+  .pop-up {
+    width: 100%;
+    background-color: #000c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    div#reginfo {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      height: max-content;
+      box-shadow: $box-sahdow;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      max-width: 600px;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      width: fit-content;
+      h2 {
+        font-size: 28px;
+        color: #070707;
+      }
+      .icon {
+        position: absolute;
+        top: -40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #37abdc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 6px solid #303031;
+        p,
+        i {
+          color: #006bce;
+          margin: 0;
+          font-size: 38px;
+        }
+        p {
+          font-weight: 500;
+        }
+      }
+      .data-row {
+        display: flex;
+        flex-direction: row;
+        p {
+          font-size: 18px;
+          span {
+            font-weight: 500;
+          }
+        }
+        &:nth-child(2) {
+          margin-top: 30px;
+        }
+        &:nth-child(3) {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+}
+
+.pl {
+  width: 6em;
+  height: 6em;
+}
+
+.pl__ring {
+  animation: ringA 2s linear infinite;
+}
+
+.pl__ring--a {
+  stroke: #131850;
+}
+
+.pl__ring--b {
+  animation-name: ringB;
+  stroke: #37abdc;
+}
+
+.pl__ring--c {
+  animation-name: ringC;
+  stroke: #006bce;
+}
+
+.pl__ring--d {
+  animation-name: ringD;
+  stroke: #5e17eb;
+}
+
+/* Animations */
+@keyframes ringA {
+  from,
+  4% {
+    stroke-dasharray: 0 660;
+    stroke-width: 20;
+    stroke-dashoffset: -330;
+  }
+
+  12% {
+    stroke-dasharray: 60 600;
+    stroke-width: 30;
+    stroke-dashoffset: -335;
+  }
+
+  32% {
+    stroke-dasharray: 60 600;
+    stroke-width: 30;
+    stroke-dashoffset: -595;
+  }
+
+  40%,
+  54% {
+    stroke-dasharray: 0 660;
+    stroke-width: 20;
+    stroke-dashoffset: -660;
+  }
+
+  62% {
+    stroke-dasharray: 60 600;
+    stroke-width: 30;
+    stroke-dashoffset: -665;
+  }
+
+  82% {
+    stroke-dasharray: 60 600;
+    stroke-width: 30;
+    stroke-dashoffset: -925;
+  }
+
+  90%,
+  to {
+    stroke-dasharray: 0 660;
+    stroke-width: 20;
+    stroke-dashoffset: -990;
+  }
+}
+
+@keyframes ringB {
+  from,
+  12% {
+    stroke-dasharray: 0 220;
+    stroke-width: 20;
+    stroke-dashoffset: -110;
+  }
+
+  20% {
+    stroke-dasharray: 20 200;
+    stroke-width: 30;
+    stroke-dashoffset: -115;
+  }
+
+  40% {
+    stroke-dasharray: 20 200;
+    stroke-width: 30;
+    stroke-dashoffset: -195;
+  }
+
+  48%,
+  62% {
+    stroke-dasharray: 0 220;
+    stroke-width: 20;
+    stroke-dashoffset: -220;
+  }
+
+  70% {
+    stroke-dasharray: 20 200;
+    stroke-width: 30;
+    stroke-dashoffset: -225;
+  }
+
+  90% {
+    stroke-dasharray: 20 200;
+    stroke-width: 30;
+    stroke-dashoffset: -305;
+  }
+
+  98%,
+  to {
+    stroke-dasharray: 0 220;
+    stroke-width: 20;
+    stroke-dashoffset: -330;
+  }
+}
+
+@keyframes ringC {
+  from {
+    stroke-dasharray: 0 440;
+    stroke-width: 20;
+    stroke-dashoffset: 0;
+  }
+
+  8% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -5;
+  }
+
+  28% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -175;
+  }
+
+  36%,
+  58% {
+    stroke-dasharray: 0 440;
+    stroke-width: 20;
+    stroke-dashoffset: -220;
+  }
+
+  66% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -225;
+  }
+
+  86% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -395;
+  }
+
+  94%,
+  to {
+    stroke-dasharray: 0 440;
+    stroke-width: 20;
+    stroke-dashoffset: -440;
+  }
+}
+
+@keyframes ringD {
+  from,
+  8% {
+    stroke-dasharray: 0 440;
+    stroke-width: 20;
+    stroke-dashoffset: 0;
+  }
+
+  16% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -5;
+  }
+
+  36% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -175;
+  }
+
+  44%,
+  50% {
+    stroke-dasharray: 0 440;
+    stroke-width: 20;
+    stroke-dashoffset: -220;
+  }
+
+  58% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -225;
+  }
+
+  78% {
+    stroke-dasharray: 40 400;
+    stroke-width: 30;
+    stroke-dashoffset: -395;
+  }
+
+  86%,
+  to {
+    stroke-dasharray: 0 440;
+    stroke-width: 20;
+    stroke-dashoffset: -440;
   }
 }

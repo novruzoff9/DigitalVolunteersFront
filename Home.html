@@ -7,7 +7,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3Y25VW1RJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-M3Y25VW1RJ');
@@ -35,6 +38,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -73,12 +78,12 @@
             <a href="Home.html"><img src="/Images/new Logo - white.png" alt="" /></a>
         </div>
         <div class="header-right">
-            <a href="login.html">Üzv girişi</a>
+            <a href="login.html">Giriş<i class="fas fa-sign-in-alt"></i></a>
         </div>
     </header>
 
     <nav>
-        <ul>
+        <ul >
             <a href="Events.html">
                 <li>Tədbirlər</li>
             </a>
@@ -92,6 +97,41 @@
                 <li>Heyət</li>
             </a>
         </ul>
+
+        <ul class="social-mobile">
+            <li>
+                <span>Instagram</span>
+                <a target="_blank" href="https://www.instagram.com/unecdigitalvolunteers/">
+                    <i class="fab fa-instagram instagram"></i>
+                </a>
+            </li>
+            <li>
+                <span>Telegram</span>
+                <a target="_blank" href="https://t.me/reqemsalkonulluler">
+                    <i class="fab fa-telegram-plane telegram"></i>
+                </a>
+            </li>
+    
+    
+            <li>
+                <span>Facebook</span>
+                <a target="_blank" href="https://www.facebook.com/unecdg">
+                    <i class="fab fa-facebook facebook"></i>
+                </a>
+            </li>
+            <li>
+                <span>LinkedIn</span>
+                <a target="_blank" href="https://www.linkedin.com/company/unec-digital-volunteers-organization/mycompany/">
+                    <i class="fab fa-linkedin linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <span>YouTube</span>
+                <a target="_blank" href="https://www.youtube.com/@unecdigitalvolunteers">
+                    <i class="fab fa-youtube youtube"></i>
+                </a>
+            </li>
+        </ul>
     </nav>
 
     <main>
@@ -101,13 +141,17 @@
                     <img src="Images/Digi_greeting.png" alt="" />
                 </div>
                 <div class="article-right">
-                    <p class="slogan">Rəqəmsallaşan dünyaya bizimlə birgə addım at!</p>
+                    <p class="slogan">Rəqəmsal gələcək! Rəqəmsal UNEC!</p>
                     <div class="links">
-                        <a target="_blank"
+                        <a target="_blank" class="volun"
                             href="https://docs.google.com/forms/d/e/1FAIpQLScZG9vc-9JbdJFo2SP6Xwz7pC0Epmu7Pb6KjKI38rIox8M2hw/viewform">Könüllü
                             ol</a>
-                        <a href="https://www.instagram.com/unecdigitalvolunteers/">İnstagram səhifəmiz <i
-                                class="fas fa-external-link-alt"></i></a>
+                        <div class="insta">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/unecdigitalvolunteers/">Instagram səhifəmiz
+                            </a>
+                        </div>
+
                     </div>
 
 
@@ -409,6 +453,41 @@
         </section>
     </main>
 
+    <ul class="links social">
+        <li>
+            <span>Instagram</span>
+            <a target="_blank" href="https://www.instagram.com/unecdigitalvolunteers/">
+                <i class="fab fa-instagram instagram"></i>
+            </a>
+        </li>
+        <li>
+            <span>Telegram</span>
+            <a target="_blank" href="https://t.me/reqemsalkonulluler">
+                <i class="fab fa-telegram-plane telegram"></i>
+            </a>
+        </li>
+
+
+        <li>
+            <span>Facebook</span>
+            <a target="_blank" href="https://www.facebook.com/unecdg">
+                <i class="fab fa-facebook facebook"></i>
+            </a>
+        </li>
+        <li>
+            <span>LinkedIn</span>
+            <a target="_blank" href="https://www.linkedin.com/company/unec-digital-volunteers-organization/mycompany/">
+                <i class="fab fa-linkedin linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <span>YouTube</span>
+            <a target="_blank" href="https://www.youtube.com/@unecdigitalvolunteers">
+                <i class="fab fa-youtube youtube"></i>
+            </a>
+        </li>
+    </ul>
+
     <footer>
         <div class="creators">
             <p>Vebsayt
@@ -420,24 +499,7 @@
         </div>
         <div class="socialmedia">
             <p>Sosial şəbəkələrimizdən bizi daha yaxından izləyin</p>
-            <div class="links">
-                <a target="_blank" href="https://www.instagram.com/unecdigitalvolunteers/">
-                    <i class="fab fa-instagram instagram"></i>
-                </a>
-                <a target="_blank" href="https://t.me/reqemsalkonulluler">
-                    <i class="fab fa-telegram-plane telegram"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/unecdg">
-                    <i class="fab fa-facebook facebook"></i>
-                </a>
-                <a target="_blank"
-                    href="https://www.linkedin.com/company/unec-digital-volunteers-organization/mycompany/">
-                    <i class="fab fa-linkedin linkedin"></i>
-                </a>
-                <a target="_blank" href="https://www.youtube.com/@unecdigitalvolunteers">
-                    <i class="fab fa-youtube youtube"></i>
-                </a>
-            </div>
+
         </div>
 
     </footer>
@@ -474,13 +536,12 @@
                 $(".stat .value").each(function () {
                     $(this).prop('counter', 0).animate({
                         counter: $(this).attr("data-value")
-                    },
-                        {
-                            duration: 2000,
-                            step: function (counter) {
-                                $(this).text(Math.ceil(counter));
-                            }
-                        })
+                    }, {
+                        duration: 2000,
+                        step: function (counter) {
+                            $(this).text(Math.ceil(counter));
+                        }
+                    })
                 });
             })
         });
@@ -518,8 +579,6 @@
                     });
                 });
         });
-
-
     </script>
 </body>
 

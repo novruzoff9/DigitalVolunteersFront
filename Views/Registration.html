@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="az">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -72,8 +72,8 @@
                 </div>
                 <div class="d-flex flex-row w-80 justify-content-around mt-3">
                     <div class="d-flex flex-column w-half">
-                        <label for="FirstName">Fakültə:</label>
-                        <select name="Faculty" placeholder="Fakültə" class="daisy">
+                        <label for="Faculty">Fakültə:</label>
+                        <select id="Faculty" name="Faculty" placeholder="Fakültə" class="daisy">
                             <option value="" hidden>Fakültəni seçin</option>
                             <option value="Digital Economy">Rəqəmsal İqtisadiyyat</option>
                             <option value="Russian Economy">Rus İqtisad Məktəbi</option>
@@ -89,8 +89,8 @@
                         </select>
                     </div>
                     <div class="d-flex flex-column w-half ">
-                        <label for="LastName">İxtisas:</label>
-                        <select name="Profession" placeholder="İxtisas" class="daisy">
+                        <label for="Profession">İxtisas:</label>
+                        <select id="Profession" name="Profession" placeholder="İxtisas" class="daisy">
                             <option value="" hidden>İxitisası seçin</option>
                             <option value="İnformasiya texnologiyaları">İnformasiya texnologiyaları</option>
                             <option value="İnformasiya təhlükəsizliyi">İnformasiya təhlükəsizliyi</option>
@@ -135,7 +135,7 @@
                     </div>
                     <div class="d-flex flex-column w-quarter ">
                         <label for="Gender">Cins:</label>
-                        <select name="Faculty" placeholder="Cins" class="daisy">
+                        <select id="Gender" name="Gender" placeholder="Cins" class="daisy">
                             <option value="">Cinsi seçin</option>
                             <option value="Male">Kişi</option>
                             <option value="Female">Qadın</option>
@@ -150,6 +150,23 @@
                 </div>
             </form>
         </section>
+        <div class="pop-up">
+            <div id="reginfo">
+                <div class="icon">
+                    <i class="fas fa-info"></i>
+                </div>
+                <div class="data-row">
+                    <p>
+                        Təşkilatımıza olan mürəcitiniz qeydə alındı. Sizin məlumatlarınız yoxlanıldıqdan sonra sizə
+                        elektron ünvan vasitəsilə giriş məlumatlarınız göndəriləcəkdir. <br> <br>
+                        Hörmətlə, Rəqəmsal Könüllülər Təşkilatı.
+                    </p>
+                </div>
+                <div class="data-row">
+                    <button class="action-button primary">Bağla</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -164,6 +181,7 @@
 
             var maxDatetime = year - 15 + '-' + 12 + '-' + 31;
 
+            $(".pop-up").height($(window).height());
             $('#BirthDate').attr('max', maxDatetime);
         });
 
@@ -177,6 +195,16 @@
         console.log(height);
         $("section").css("height", height);
         $("#confirm").click(function () {
+            var inputs = $('.daisy');
+
+            var formData = {};
+
+            inputs.each(function () {
+                var id = $(this).attr('id');
+                var value = $(this).val();
+                formData[id] = value;
+            });
+            console.log(formData);
             event.preventDefault();
             let nullinput = false;
             let telphone = false;
