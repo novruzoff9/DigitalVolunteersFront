@@ -139,7 +139,7 @@
         <div class="editdetails">
             <h3>Əlaqə məlumatları</h3>
             <div class="data-field">
-                <label for="PhoneNumber">Telefon:</label>
+                <label for="PhoneNumber">Telefon</label>
                 <div class="input-tel w-100">
                     <input data-val="true" data-val-number="The field PhoneNumber must be a number."
                         data-val-required="The PhoneNumber field is required." id="PhoneNumber" name="PhoneNumber"
@@ -148,9 +148,10 @@
                 </div>
             </div>
             <div class="data-field">
-                <label for="Email">Email:</label>
+                <label for="Email">Email</label>
                 <input id="Email" type="email" class="daisy">
             </div>
+            <p id="errormsg" style="color: #ff331f;"></p>
             <button id="succesbtn" class="action-button primary">Təsdiq et</button>
         </div>
     </main>
@@ -177,19 +178,18 @@
             const Email = $("#Email").val();
             if (!(isValidEmail(Email))) {
                 $("#Email").css("border-color", "#ff331f");
-                email = true;
+                $("#errormsg").text("*Email düzgün deyil");
             }
             else {
                 $("#Email").css("border-color", "#3f8f3e");
             }
             if (PhoneNumber.length != 9) {
                 $("#PhoneNumber").css("border-color", "#ff331f");
-                telphone = true;
+                $("#errormsg").text("*Telefon nömrəsi 9 simvoldan ibarət olmalıdır");
             }
             else {
                 $("#PhoneNumber").css("border-color", "#3f8f3e");
             }
-            console.log(PhoneNumber, Email);
         });
     </script>
     <script>

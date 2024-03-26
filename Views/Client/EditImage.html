@@ -141,12 +141,14 @@
             <p>*Daxil etdiyiniz şəkil 1:1 ölçüsündə olmalı və 2MB-dan çox olmamalıdır</p>
             <div class="d-flex flex-column">
                 <section id="user-card">
-                    <div class="d-flex justify-content-center flex-row w-100">
+                    <div class="d-flex align-items-center justify-content-center flex-column w-100">
                         <div class="d-flex flex-column">
-                            <button style="background-image: url(/Images/Staff/Yagmur_Novruzlu_2.jpg);"
-                                id="btnchangeimage"><i class="fas fa-pencil-alt"></i></button>
+                            <label for="ProfilePhoto"
+                                style="background-image: url(/Images/Staff/Yagmur_Novruzlu_2.jpg);"
+                                id="btnchangeimage"><i class="fas fa-pencil-alt"></i>
+                            </label>
                         </div>
-
+                        <p id="imageerror"></p>
                         <div id="change-image" class="pop-up">
                             <section id="image-validation">
                                 <h4>Şəkili dəyiş</h4>
@@ -174,10 +176,6 @@
     <script>
         let imgpopupopen = false;
         const imgpopup = document.getElementById('image-validation');
-        $("#btnchangeimage").click(function () {
-            $("#change-image").css("display", "flex");
-            setTimeout(() => { imgpopupopen = true; }, 200);
-        });
 
         $("#ProfilePhoto").change(function () {
             const errormessage = $("p#imageerror");
@@ -214,23 +212,26 @@
             }
         });
 
-        $("#image-validation button").click(function () {
-            const errormessage = $("p#imageerror");
-            if (errormessage.hasClass("success")) {
-                $("#change-image").css("display", "none");
-                setTimeout(() => { imgpopupopen = false; }, 200);
-                alert("tesdiq");
-            }
+        $("#succesbtn").click(function () {
+            //AJAXXXX
         });
+        // $("#image-validation button").click(function () {
+        //     const errormessage = $("p#imageerror");
+        //     if (errormessage.hasClass("success")) {
+        //         $("#change-image").css("display", "none");
+        //         setTimeout(() => { imgpopupopen = false; }, 200);
+        //         alert("tesdiq");
+        //     }
+        // });
 
-        $(document).click(function (event) {
-            if (imgpopupopen) {
-                if (!imgpopup.contains(event.target)) {
-                    $("#change-image").css("display", "none");
-                    setTimeout(() => { imgpopupopen = false; }, 200);
-                }
-            }
-        });
+        // $(document).click(function (event) {
+        //     if (imgpopupopen) {
+        //         if (!imgpopup.contains(event.target)) {
+        //             $("#change-image").css("display", "none");
+        //             setTimeout(() => { imgpopupopen = false; }, 200);
+        //         }
+        //     }
+        // });
     </script>
     <script>
         var user = JSON.parse(localStorage.getItem("user"));

@@ -207,18 +207,14 @@
 
     <script>
         $(document).ready(function () {
-            var now = new Date();
-            var year = now.getFullYear();
-
-            var maxDatetime = year - 15 + '-' + 12 + '-' + 31;
-
             $(".pop-up").height($(window).height());
-            $('#BirthDate').attr('max', maxDatetime);
         });
         $("#succesbtn").click(function () {
-            const BirthDate = $("#BirthDate").val();
-            const Gender = $("input[name='Gender']:checked").val();
-            console.log(BirthDate, Gender);
+            const EntranceYear = $("#EntranceYear").val();
+            const Group = $("#Group").val();
+            const Faculty = $('#Faculty').find(":selected").val();
+            const Profession = $('#Profession').find(":selected").val();
+            //console.log(Faculty, Profession, EntranceYear, Group);
         });
     </script>
     <script>

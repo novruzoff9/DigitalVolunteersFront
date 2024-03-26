@@ -11,98 +11,168 @@ $box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
 
+h4 {
+  margin: 10px auto;
+  margin-top: 10px !important;
+  color: #131850;
+}
 @media only screen and (min-width: 601px) {
-  main {
-    flex-direction: column;
-  }
-  nav {
+  ul#editprofile {
+    list-style: none;
     width: 100%;
+    padding: 10px !important;
+    margin: 0 !important;
     display: flex;
-    flex-direction: row;
-    margin: 25px;
-    justify-content: space-evenly;
-    align-items: center;
-    .page {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background-color: #006bce;
+    flex-direction: column;
+    justify-content: center;
+    li.settingspage a {
+      width: 20%;
+      margin: 10px auto;
+      padding: 10px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      p,
-      i {
-        font-size: 20px;
-        color: white;
-        margin: 0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #000;
+      border: 2px solid #ccc;
+      i:first-child {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #cfe8ff;
+        color: #006bce;
+        border-radius: 8px;
       }
       p {
+        margin: 0;
+        margin-left: 10px;
         font-weight: 500;
       }
+      i:last-child {
+        display: flex;
+        margin: 0 5px 0 auto;
+      }
+      &:hover {
+        background-color: #ccc;
+      }
     }
   }
-  .content {
-    margin: 25px;
-    flex-direction: row;
-    #user-card {
-      height: 100%;
-      justify-content: center;
-      img {
-        width: 150px;
-        border-radius: 50%;
+  .editdetails {
+    margin: 25px auto;
+    width: 40%;
+    h3 {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
+    .data-field {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 15px;
+      label {
+        font-weight: 500;
       }
-      .user-datas {
-        margin-left: 20px;
-        height: 100%;
-        justify-content: space-between;
-        width: 280px;
-        p {
-          margin: 0;
-        }
-        p.name {
-          margin-top: 20px;
-          font-weight: 500;
-          font-size: 24px;
-        }
-        p.faculty {
-          font-size: 16px;
-          color: #3e465b;
-        }
-        label {
-          align-self: flex-end;
-          cursor: pointer;
-        }
-        input {
-          display: none;
-        }
-        p#imageerror {
-          background-color: transparent;
-          border: none;
-          text-align: end;
-          width: 100%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-        p.error {
-          color: #ff331f;
-        }
-        p.success {
-          color: #3f8f3e;
-        }
+      input {
+        width: 100%;
       }
     }
-    #new-password {
+    .data-field-radio {
+      input[type="radio"] {
+        accent-color: #006bce;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+        transform: scale(1.5);
+        margin-right: 5px;
+      }
+    }
+    h6 {
+      margin-top: 15px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+    }
+    .input-tel {
+      position: relative;
+      input {
+        padding-left: 60px;
+      }
+      .telstart {
+        background-color: #87898f;
+        height: 36px;
+        width: 46px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-weight: 500;
+        top: 2px;
+        left: 2px;
+      }
+    }
+  }
+  #user-card {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    #btnchangeimage {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      outline: none;
+      border: 2px solid #006bce;
+      opacity: 0.8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        color: #006bce;
+        font-size: 22px;
+        opacity: 1 !important;
+      }
+    }
+    .user-datas {
       margin-left: 20px;
       height: 100%;
-      h4,
+      justify-content: space-between;
+      width: calc(100% - 20px);
       p {
-        margin-bottom: 0.3rem;
+        margin: 0;
+      }
+      p.name {
+        font-weight: 500;
+        font-size: 24px;
+      }
+      p.faculty {
+        font-size: 16px;
+        color: #3e465b;
+      }
+      label {
+        align-self: flex-end;
+        cursor: pointer;
+      }
+      input {
+        display: none;
+      }
+      p#imageerror {
+        background-color: transparent;
+        border: none;
+        text-align: end;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 5px 0 0 0;
       }
     }
   }
-
   .pop-up {
     display: none;
     flex-direction: column;
@@ -191,6 +261,26 @@ $box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       margin-top: 15px;
       width: 100%;
     }
+    .input-tel {
+      position: relative;
+      input {
+        padding-left: 60px;
+      }
+      .telstart {
+        background-color: #87898f;
+        height: 36px;
+        width: 46px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-weight: 500;
+        top: 2px;
+        left: 2px;
+      }
+    }
   }
   #user-card {
     height: 100%;
@@ -201,11 +291,13 @@ $box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       height: 100px;
       border-radius: 50%;
       background-size: cover;
-      /* Center the image */
       background-position: center;
       outline: none;
       border: 2px solid #006bce;
       opacity: 0.8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       i {
         color: #006bce;
         font-size: 22px;
@@ -242,6 +334,7 @@ $box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin: 5px 0 0 0;
       }
     }
   }
@@ -266,6 +359,7 @@ p.error {
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 5px 0 0 0;
 }
 p.success {
   color: #3f8f3e;
