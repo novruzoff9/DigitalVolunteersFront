@@ -1,0 +1,279 @@
+$darkblue: #0162e8;
+$blue: #006bce;
+$darkgray: #1e2329;
+$gray: #87898f;
+$lightgray: #f1f0f6;
+$lightblue: #37abdc;
+
+$box-sahdow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$box-sahdow2: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+@media only screen and (min-width: 601px) {
+  main {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    .page {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #006bce;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      p,
+      i {
+        font-size: 20px;
+        color: white;
+        margin: 0;
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+  .content {
+    margin: 25px;
+    flex-direction: row;
+    #user-card {
+      height: 100%;
+      justify-content: center;
+      img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      .user-datas {
+        margin-left: 20px;
+        height: 100%;
+        justify-content: space-between;
+        width: 280px;
+        p {
+          margin: 0;
+        }
+        p.name {
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 24px;
+        }
+        p.faculty {
+          font-size: 16px;
+          color: #3e465b;
+        }
+        label {
+          align-self: flex-end;
+          cursor: pointer;
+        }
+        input {
+          display: none;
+        }
+        p#imageerror {
+          background-color: transparent;
+          border: none;
+          text-align: end;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        p.error {
+          color: #ff331f;
+        }
+        p.success {
+          color: #3f8f3e;
+        }
+      }
+    }
+    #new-password {
+      margin-left: 20px;
+      height: 100%;
+      h4,
+      p {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+
+  .pop-up {
+    display: none;
+    flex-direction: column;
+    input {
+      width: 240px;
+      margin: 2px 0;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    list-style: none;
+    width: 100%;
+    padding: 10px !important;
+    margin: 0 !important;
+    li.settingspage a {
+      margin: 10px 0;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #000;
+      i:first-child {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #cfe8ff;
+        color: #006bce;
+        border-radius: 8px;
+      }
+      p {
+        margin: 0;
+        margin-left: 10px;
+        font-weight: 500;
+      }
+      i:last-child {
+        display: flex;
+        margin: 0 5px 0 auto;
+      }
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+  .editdetails {
+    margin: 15px;
+    width: 100%;
+    h3 {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
+    .data-field {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 15px;
+      label {
+        font-weight: 500;
+      }
+      input {
+        width: 100%;
+      }
+    }
+    .data-field-radio {
+      input[type="radio"] {
+        accent-color: #006bce;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+        transform: scale(1.5);
+        margin-right: 5px;
+      }
+    }
+    h6 {
+      margin-top: 15px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+  #user-card {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    #btnchangeimage {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-size: cover;
+      /* Center the image */
+      background-position: center;
+      outline: none;
+      border: 2px solid #006bce;
+      opacity: 0.8;
+      i {
+        color: #006bce;
+        font-size: 22px;
+        opacity: 1 !important;
+      }
+    }
+    .user-datas {
+      margin-left: 20px;
+      height: 100%;
+      justify-content: space-between;
+      width: calc(100% - 20px);
+      p {
+        margin: 0;
+      }
+      p.name {
+        font-weight: 500;
+        font-size: 24px;
+      }
+      p.faculty {
+        font-size: 16px;
+        color: #3e465b;
+      }
+      label {
+        align-self: flex-end;
+        cursor: pointer;
+      }
+      input {
+        display: none;
+      }
+      p#imageerror {
+        background-color: transparent;
+        border: none;
+        text-align: end;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .pop-up {
+    display: none;
+    flex-direction: column;
+    input {
+      width: 240px;
+      margin: 2px 0;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+}
+
+p.error {
+  color: #ff331f !important;
+  border: none;
+  max-width: 240px;
+  text-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+p.success {
+  color: #3f8f3e;
+  background-color: transparent !important;
+  border: none !important;
+  max-width: 240px;
+  text-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
